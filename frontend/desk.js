@@ -117,7 +117,7 @@
     }
     if (/how|method|work|data|source|where|what is/.test(ql)) {
       const n = RUN.panel && RUN.panel.n_personas
-      return [`${n || 'A panel of'} AI shoppers from one Flashpoint panel rated each brand: how good the website is, how likely they are to buy from it in the next 12 months, whether it is a kind of product they buy, and whether they had heard of it. Those are things people say.`,
+      return [`${n || 'A panel of'} AI shoppers from one Flashpoint panel rated each brand: how good the website is, how likely they are to buy from it in the next 12 months, whether it is a kind of product they buy, and whether they had heard of it. Those are things the AI shoppers say.`,
         'The answer key is company revenue: each company\'s yearly revenue from its own SEC 10-K filing. Code compares the two rankings, and a rule written before any result sets the trust label.']
     }
     return ['I can answer from this study: name a brand, or ask "should I trust it?", "who did the crowd get wrong?", "what about a second crowd?", or "how does this work?".']
@@ -239,6 +239,7 @@
         h('article', { class: 'ev new' },
           h('p', { class: 'mono' }, 'How far to trust an AI crowd for this ', j.evidence && j.evidence.label ? h('span', { class: 'tag tag-vs' }, str(j.evidence.label)) : h('span', { class: 'tag tag-est' }, 'NOT TESTED IN THIS STUDY')),
           h('h3', { class: 'coral' }, str(j.level_text)),
+          j.level_source ? h('p', { class: 'mono dim' }, 'Label set by: ' + str(j.level_source)) : null,
           j.why ? h('p', null, str(j.why)) : null),
         j.real_question ? h('article', { class: 'ev' },
           h('p', { class: 'mono' }, 'Ask real people this ', byModel ? tag('ai') : h('span', { class: 'tag tag-est' }, 'CODE TEMPLATE')),
