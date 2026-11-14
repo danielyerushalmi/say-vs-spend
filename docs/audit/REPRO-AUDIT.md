@@ -1,5 +1,7 @@
 # Reproducibility audit: can a judge rerun the README?
 
+> Note: this audit ran on our development repo, which is now private. This public repo is a one-commit clean copy of it, so commit IDs here are from the development repo (list with times: `docs/DEV-HISTORY.md`).
+
 Date: Sat Nov 14 2026, 12:34 to 12:38 PM ET. Auditor: Claude (sub-agent). Nothing in the original repo was changed except this file. No commits, no pushes.
 
 **Scope warning:** this audit tested commit `80a8ab6`, which was the public branch tip at 12:34. While I worked, someone else made local commit `68938d0` (184 tests) and edited `README.md` (uncommitted). Neither was in my clone. After those are pushed, rerun steps 1 to 3 below once before judging.
@@ -14,7 +16,7 @@ Two real gaps, both easy to fix (details below):
 
 ## Setup
 
-- Clone: `git clone --branch jayden/say-vs-spend https://github.com/danielyerushalmi/hackathon-project` into a new empty folder `/private/tmp/claude-501/fresh-clone-1794677686/repo`. **No sign-in was needed, so the repo is already publicly readable.** Clone HEAD = `80a8ab6`, the same commit as the local branch.
+- Clone: `git clone --branch jayden/say-vs-spend https://github.com/danielyerushalmi/hackathon-project` into a new empty folder `<scratch>/`. **No sign-in was needed, so the repo is already publicly readable.** Clone HEAD = `80a8ab6`, the same commit as the local branch.
 - Python: `/Library/Frameworks/Python.framework/Versions/3.14/bin/python3`, Python 3.14.4. Nothing installed.
 - The clone does not contain the local untracked files (`say/extras.py`, `say/real_check.py`, `say/report.py`, their tests, `docs/report/`, `docs/REAL-PEOPLE-KIT.md`). This audit tests what a judge actually gets.
 - `git status` in the clone stayed clean after every command (the README rebuild command writes only to `/tmp/say-check`).
