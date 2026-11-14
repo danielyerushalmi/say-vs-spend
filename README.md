@@ -1,6 +1,25 @@
+<p align="center">
+  <img src="docs/images/ranks.gif" width="900" alt="Animated chart. Left: the AI crowd's 'would you buy' ranking of six brands, with ThredUp first. Right: the same brands ranked by real yearly revenue from SEC filings, where ThredUp is fifth. Lines connect each brand and cross a lot. A badge appears: match score 0.03, Ask real people.">
+</p>
+
 # Say vs. Spend
 
 **AI focus groups are almost free. We built a test that tells you how far to trust one, by checking it first where the real answer is known.**
+
+<p align="center">
+  <img alt="Built at Hack the Unreachable 2026" src="https://img.shields.io/badge/built%20at-Hack%20the%20Unreachable%202026-0b2a3c">
+  <img alt="Python 3, standard library only" src="https://img.shields.io/badge/python-3%20%C2%B7%20standard%20library%20only-1f4e5f">
+  <img alt="253 tests passing on Nov 14, 2026" src="https://img.shields.io/badge/tests-253%20passing-2e7d5b">
+  <img alt="Data: SEC EDGAR and Flashpoint" src="https://img.shields.io/badge/data-SEC%20EDGAR%20%2B%20Flashpoint-e8735a">
+</p>
+
+<p align="center">
+  <a href="#what-we-found"><b>Results</b></a> ·
+  <a href="#try-the-page"><b>Try the page</b></a> ·
+  <a href="#how-it-works"><b>How it works</b></a> ·
+  <a href="#limits"><b>Limits</b></a> ·
+  <a href="#how-to-run-it"><b>Run it yourself</b></a>
+</p>
 
 Built in one day at the Hack the Unreachable AI Hackathon, Fordham University, November 14, 2026, by Jayden and Daniel.
 
@@ -14,9 +33,18 @@ A small online store can't pay thousands for a real focus group. An AI focus gro
 
 So we tested one where the answer is already known. 200 AI shoppers rated 6 public companies that sell mainly online. We checked their ranking against where the money really went: each company's yearly revenue from its SEC filing. We also checked it against fame alone. The crowd only gets credit if it beats fame.
 
+<p align="center">
+  <img src="docs/images/page-icebergs.gif" width="880" alt="The Say vs. Spend page. Icebergs rise out of the water, one per brand: the tip is what the AI crowd said it would buy, the part below the water is the company's real revenue, to scale. Clicking ThredUp shows it rated highest by the crowd but fifth by revenue.">
+  <br><sub>Our page: above the water is what the AI crowd <b>said</b>. Below it is what each company really <b>earned</b> (to scale).</sub>
+</p>
+
 ## What we found
 
 **Two AI crowds agree with each other. They do not agree with where the money goes.**
+
+<p align="center">
+  <img src="docs/images/scores.png" width="900" alt="Chart of five match scores against real revenue, each with its luck range. AI crowd 1 would-buy: 0.03, range -0.94 to 0.64 (the pre-registered test). AI crowd 2 would-buy: -0.20. Fame from the AI crowd: 0.72. Website score: 0.77. Wikipedia page views: 0.90. Dashed lines mark the 0.4 and 0.7 label cutoffs. A bar at the bottom says two AI crowds agree with each other at 0.89, but neither matches the money.">
+</p>
 
 **The pre-registered result:** the AI crowd's buying ranking matched revenue at **0.03** (exact p = 1.00). The code's label is **Ask real people.** This was the only score we wrote down before computing any result (plus the yes/no check "did it beat fame?"). Every other number below is **EXPLORATORY** (not pre-registered).
 
@@ -55,6 +83,32 @@ The score is Spearman rank agreement: 1 = same order as revenue, 0 = no connecti
 
 Revenue and filing links are in `say/brands/`. Wikipedia ranks are the order of the 365-day page-view counts in `say/fame/wikipedia_pageviews.json`. Our script found no English Wikipedia article for Revolve (three titles checked, `say/fame/wiki.py`), so that line uses 5 brands. For BARK it uses the BarkBox article (BARK's main product brand; flagged as an uncertain match in `say/fame/wiki.py`).
 
+## Try the page
+
+**Guess first, then compare.** Drag each brand to how much money you think it makes, lock in, and see if you beat the AI crowd.
+
+<p align="center">
+  <img src="docs/images/page-game.gif" width="880" alt="The guessing game. Each brand's iceberg tip shows the AI crowd's buy score. The visitor drags each brand down to a revenue guess, locks in, and the real revenue appears as dashed outlines with a score: your guess vs. the AI crowd's 0.03 and Wikipedia's 0.90. The guesses in this recording are demo inputs, not data.">
+  <br><sub>The guesses in this recording are made-up demo inputs, not data.</sub>
+</p>
+
+**Then the verdict.** It shows which kinds of AI-crowd answers looked promising and which did not, and ends on the pre-registered label.
+
+<p align="center">
+  <img src="docs/images/page-verdict.gif" width="880" alt="The verdict section: a reveal button opens two columns. Promising, not proven: website grades 0.77, awareness 0.72, two crowds consistent. Ask real people: stated 'would buy' matched revenue at only 0.03. It ends with 'Ask real people' in large letters.">
+</p>
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/images/report-card.png" alt="Website report card: letter grades for the six brands' websites from 200 AI shoppers, each with a rating histogram and a SYNTHETIC tag."></td>
+    <td width="50%"><img src="docs/images/grade-my-website.png" alt="The desk page with the Grade my website tab: paste a link to grade your site, then type what you sell and what you want to ask an AI crowd."></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Website report card</b>: what the AI shoppers said about each site (SYNTHETIC)</sub></td>
+    <td align="center"><sub><b>Grade my website</b>: for a store owner's own site and question (EXPLORATORY)</sub></td>
+  </tr>
+</table>
+
 ## For a store owner: "Grade my website" (EXPLORATORY)
 
 The desk page has a **Grade my website** tab for store owners.
@@ -82,6 +136,10 @@ The "perception" answer is an EXPLORATORY rule we added at 13:30, after the resu
 A good prediction of the AI crowd is still not a prediction of real buyers: on the 6 main brands, the crowd's buying ranking matched real revenue at only 0.03.
 
 ## How it works
+
+<p align="center">
+  <img src="docs/images/how-it-works.png" width="900" alt="Three steps. 1, The crowd says: 200 Flashpoint AI shoppers rate each brand (SYNTHETIC). 2, The money says: each company's SEC filing gives its real yearly revenue (MEASURED). 3, Code decides the trust: a rule written before any result turns the match into one label (COMPUTED).">
+</p>
 
 ```mermaid
 flowchart TD
