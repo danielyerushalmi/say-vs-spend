@@ -1,5 +1,7 @@
 # How Crowd Coach works
 
+> SUPERSEDED: this is our earlier Crowd Coach prototype from the morning. For Say vs. Spend, see `README.md` and `docs/PITCH-SAY.md`.
+
 Same idea as the README, with a bit more detail. Source of truth is the code; see `agent/CONTRACT.md`.
 
 ## The question

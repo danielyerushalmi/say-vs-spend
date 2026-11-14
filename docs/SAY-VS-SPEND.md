@@ -1,3 +1,5 @@
+> Historical: our 11:45 AM plan. Some times here were planned, not actual (for example, brands actually locked at 12:01). See `docs/METHODS-CARD.md` for what happened.
+
 # Say vs. Spend: plan and data contract (DRAFT for Jayden + Daniel to agree, 2026-11-14 ~11:45 ET)
 
 Replaces Crowd Coach (frozen on branch `jayden/agent-pipeline`). Plan only. No result exists yet.

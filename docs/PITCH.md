@@ -1,5 +1,7 @@
 # Crowd Coach: pitch, demo script, judge Q&A (DRAFT for Jayden)
 
+> SUPERSEDED: this is our earlier Crowd Coach prototype from the morning. For Say vs. Spend, see `README.md` and `docs/PITCH-SAY.md`.
+
 Written ~11:25 AM ET, Sat Nov 14, 2026. Presentations 3:30 PM. Jayden presents. Nothing here is a result.
 
 Rules for filling this in:

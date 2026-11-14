@@ -42,7 +42,7 @@ BUY_LIMIT = ("Buyers-only agreement uses only personas who said they buy this ki
              "it is a secondary view, not the trust label.")
 LIMITS = [
     "Revenue is total yearly revenue (worldwide, incl. any wholesale), not US website-only sales.",
-    "Both crowd answers are things people SAY; only revenue is real spending.",
+    "Both crowd answers are things the AI shoppers SAY; only revenue is real spending.",
     "Fame ranking comes from the same panel (share who have heard of each brand).",
     "Revenue = number of customers x spend per customer (plus any non-US sales): it measures business size, "
     "not how many people buy. Fiscal years end in different months.",

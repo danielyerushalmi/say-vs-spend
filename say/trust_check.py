@@ -182,7 +182,7 @@ def _why(kind, ev, level) -> str:
             lo, hi = ev["say_range"]
             s += (f" The crowd's website scores sit in a narrow band ({lo:.1f} to {hi:.1f} out of 10), "
                   f"so small differences decide the order.")
-        return s + (f" With {n} brands this could still be chance (EXPLORATORY). Treat it as a lead, not proof; "
+        return s + (f" With {n} brands this could still be chance (EXPLORATORY; this perception rule was added at 13:30, after the results were known). Treat it as a lead, not proof; "
                     f"check buying decisions with real people.")
     s = f"On {n} real online brands, the AI crowd's ranking for {KIND_TEXT[kind]} matched real revenue at {ev['spearman']:.2f}"
     if ev["could_be_chance"]:
