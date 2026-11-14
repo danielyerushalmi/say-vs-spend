@@ -187,7 +187,7 @@
       const ag = run.agreement || {}
       const part = (label, a) => a && isNum(a.spearman) ? h('span', { class: 'hr-part' }, label + ' ', h('b', null, f2(a.spearman))) : null
       const nb = ag.n_brands || brandsOf(run).length
-      const stb = run.repeat_run && run.repeat_run.stability ? [run.repeat_run.stability.intent_rank_spearman_between_panels, run.repeat_run.stability.fame_rank_spearman_between_panels].filter(isNum) : []
+      const stb = run.repeat_run && run.repeat_run.stability ? [run.repeat_run.stability.say_rank_spearman_between_panels, run.repeat_run.stability.intent_rank_spearman_between_panels, run.repeat_run.stability.fame_rank_spearman_between_panels].filter(isNum) : []
       put(hr, stb.length ? h('span', { class: 'hr-part' }, 'Crowd vs crowd ', h('b', null, `${f2(Math.min(...stb))}–${f2(Math.max(...stb))}`)) : null, part('· Websites vs revenue', ag.say), part('· Awareness', ag.fame), part('· “Would buy” (pre-registered)', ag.intent), h('span', { class: 'mono hr-note' }, ` exploratory · ${nb} brands`))
       hr.setAttribute('href', '#grades')
       hr.hidden = false

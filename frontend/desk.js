@@ -267,8 +267,8 @@
         err != null ? h('span', { class: 'g-err', style: `left:${pos(p.predicted_website_score - err)};width:calc(${pos(p.predicted_website_score + err)} - ${pos(p.predicted_website_score - err)})` }) : null,
         h('span', { class: 'g-dot', style: `left:${pos(p.predicted_website_score)}` })),
       h('p', { class: 'mono dim' }, `Real brands the crowd rated: ${f1(lo)} to ${f1(hi)}`),
-      p.headline ? h('p', null, str(p.headline)) : null,
-      isNum(p.predicted_buy_score) ? h('p', { class: 'mono dim' }, `Predicted "likely to buy": ${f1(p.predicted_buy_score)}/10` + (p.typical_error && isNum(p.typical_error.buy) ? ` · typical error ${f1(p.typical_error.buy)}` : '')) : null,
+      avgOnly ? h('p', null, `A typical store gets about ${f1(p.predicted_website_score)}/10 from this crowd${err != null ? ` (typical error ${f1(err)})` : ''}. It rated 12 real brands' websites (our 6 plus 6 that failed the online-first rule) between ${f1(lo)} and ${f1(hi)}, so it rates almost every site about the same.`) : p.headline ? h('p', null, str(p.headline)) : null,
+      isNum(p.predicted_buy_score) ? h('p', { class: 'mono dim' }, `${avgOnly && /average/i.test(str(p.method && p.method.buy)) ? 'Average' : 'Predicted'} "likely to buy": ${f1(p.predicted_buy_score)}/10` + (p.typical_error && isNum(p.typical_error.buy) ? ` · typical error ${f1(p.typical_error.buy)}` : '')) : null,
       Array.isArray(p.why) && p.why.length ? h('p', { class: 'dim small' }, p.why.map(str).join(' ')) : null,
       p.label ? h('p', { class: 'dim small' }, str(p.label)) : null,
       p.reality_note ? h('p', { class: 'small' }, str(p.reality_note)) : null,
@@ -305,7 +305,7 @@
           h('p', { class: 'dim small' }, str(ai.label))) : j.ai_read && j.ai_read.error ? h('p', { class: 'dim small' }, str(j.ai_read.error)) : null,
         range ? h('article', { class: 'ev' },
           h('p', { class: 'mono' }, 'Next to the Flashpoint crowd ', tag('syn')),
-          h('p', null, `Our crowd of AI shoppers rated 12 real online brands' websites between ${f1(range[0])} and ${f1(range[1])} out of 10. They rate most sites about the same, so the fixes above are the part to act on.`)) : null)
+          h('p', null, `Our crowd of AI shoppers rated 12 real online brands' websites (our 6 plus 6 that failed the online-first rule) between ${f1(range[0])} and ${f1(range[1])} out of 10. They rate most sites about the same, so the fixes above are the part to act on.`)) : null)
       if (HAS_GSAP && !REDUCED) gsap.from(out.children, { y: 14, opacity: 0, stagger: 0.07, duration: 0.4, ease: 'power3.out' })
     } catch (e) {
       out.textContent = ''; out.append(h('p', { class: 'dim' }, str(e.message)))

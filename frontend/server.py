@@ -120,7 +120,7 @@ class _Page(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.title, self.desc, self.viewport = "", "", False
-        self.h1, self.imgs, self.imgs_alt, self.links, self.buttons = [], 0, 0, [], []
+        self.h1, self.h1_count, self.imgs, self.imgs_alt, self.links, self.buttons = [], 0, 0, 0, [], []
         self._tag, self.text = None, []
 
     def handle_starttag(self, tag, attrs):
@@ -132,6 +132,8 @@ class _Page(HTMLParser):
                 self.desc = (a.get("content") or "").strip()
             if n == "viewport":
                 self.viewport = True
+        elif tag == "h1":
+            self.h1_count += 1
         elif tag == "img":
             self.imgs += 1
             if (a.get("alt") or "").strip():
@@ -199,7 +201,7 @@ def grade_site(url: str) -> dict:
         ("Works on phones (viewport set)", page.viewport, "Add a mobile viewport tag so it fits phone screens."),
         ("Clear page title", 10 <= len(page.title) <= 70, "Write a 10 to 70 character title that says what you sell."),
         ("Search/share description", bool(page.desc), "Add a meta description: one sentence on what you sell."),
-        ("One main headline (H1)", len(page.h1) == 1, f"Use exactly one main headline (found {len(page.h1)})."),
+        ("One main headline (H1)", page.h1_count == 1, f"Use exactly one main headline (found {page.h1_count})."),
         ("Clear call to action", bool(cta), "Add an obvious button like Shop now, Add to cart or Sign up."),
         ("Images described (alt text)", alt_share >= 0.8, f"Only {round(alt_share * 100)}% of images have descriptions; aim for 80%+."),
         ("Enough words to explain", words >= 150, f"Only about {words} words of text; explain what you sell and why."),
@@ -220,7 +222,7 @@ def grade_site(url: str) -> dict:
             pass
     if LLM_CLIENT is not None and os.environ.get("ANTHROPIC_API_KEY"):
         facts = {"title": page.title, "description": page.desc[:300], "headlines": page.h1[:3], "buttons": sorted(set(page.buttons))[:25],
-                 "words": words, "load_seconds": round(secs, 2), "failed_checks": [n for n, ok, _ in checks if not ok],
+                 "h1_count": page.h1_count, "words": words, "load_seconds": round(secs, 2), "failed_checks": [n for n, ok, _ in checks if not ok],
                  "text_start": " ".join(page.text)[:1800]}
         system = ("You review an online store's homepage the way a typical US online shopper would. Use ONLY the facts given. "
                   "Return JSON: {\"score\": 1-10 number, \"impression\": one or two sentences, \"fixes\": [three short fixes]}. "

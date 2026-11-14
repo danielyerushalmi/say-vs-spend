@@ -419,3 +419,5 @@ button { font: inherit; color: inherit; }
 .site-checks li.ok b { color: var(--foam); }
 .site-checks li.no b { color: var(--coral); }
 .check-h2 { font-family: var(--display); font-weight: 400; font-size: 20px; margin-top: 18px; letter-spacing: -0.01em; }
+/* 1) keep the headline clear of the brand card on 1200-1300px screens */
+@media (min-width: 1200px) { .hero-copy { max-width: min(780px, 86vw, calc(100vw - 2 * var(--gut) - 420px)); } }
