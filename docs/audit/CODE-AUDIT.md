@@ -2,7 +2,7 @@
 
 Audited 2026-11-14, 12:31 to 12:45 ET, at HEAD `68938d0` (branch `jayden/say-vs-spend`).
 This was a read-only audit. No code was changed. The probe scripts live outside the repo, in
-`/private/tmp/claude-501/audit/` (p1_wiki.py, p2_parse.py, p3_llm.py, p4_e2e.py, p5_misc.py).
+`<scratch>/` (p1_wiki.py, p2_parse.py, p3_llm.py, p4_e2e.py, p5_misc.py).
 
 Files audited: say/compare.py, say/runfile.py, say/run.py, say/flashpoint_import.py, say/repeat.py,
 say/fame/wiki.py, say/trust_text.py, say/detective.py, agent/llm.py.

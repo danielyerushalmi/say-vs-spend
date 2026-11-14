@@ -163,7 +163,7 @@ python3 -I say/audit/recount.py
 
 We ran this on Nov 14; its agreement scores, Wikipedia block, extras block and trust card matched the saved run file, and the recount reported "MISMATCHES: none". `docs/audit/REPRO-AUDIT.md` repeats the check from a fresh clone. That check came before the 12:57 model run. A `--no-llm` rebuild of today's run file gives the same numbers and label, but the AI-generated text (draft question, reason sentence, WHY summaries) is replaced by code templates or left empty.
 
-Open the page: run `python3 frontend/server.py` from the repo root, then open http://localhost:3001 (set `PORT` to change it). The landing page and the desk load the run file with no key; the desk's chat needs `ANTHROPIC_API_KEY` set in your terminal and is capped at 20 calls (`SAY_CHAT_MAX_CALLS`). Checked on Nov 14 against main a06b8e3.
+Open the page: run `python3 frontend/server.py` from the repo root, then open http://localhost:3001 (set `PORT` to change it). The landing page and the desk load the run file with no key; the desk's chat needs `ANTHROPIC_API_KEY` set in your terminal and is capped at 20 calls (`SAY_CHAT_MAX_CALLS`). Checked on Nov 14 against our development repo's main (a06b8e3; see `docs/DEV-HISTORY.md`).
 
 No server? Open `docs/report/index.html` directly in a browser: an offline evidence page with every number, its label and its source, built from the run file by `python3 -m say.report`.
 

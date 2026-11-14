@@ -1,5 +1,7 @@
 # Public-repo audit
 
+> Note: this audit ran on our development repo, which is now private. This public repo is a one-commit clean copy of it, so commit IDs here are from the development repo (list with times: `docs/DEV-HISTORY.md`).
+
 Repo: `danielyerushalmi/hackathon-project`. Audited 2026-11-14, 12:31 to 12:40 PM ET, read-only.
 Scope: all 33 commits (through `80a8ab6`, pushed at about 12:34) on every local and remote branch (`main`, `jayden/agent-pipeline`, `jayden/say-vs-spend`, and their `origin/` copies), no tags, no stashes. Also the working tree as of 12:35, including untracked files that are not committed yet. GitHub: no pull requests, no issues. The repo is private right now (checked with `gh api`).
 
