@@ -306,7 +306,7 @@ def run_pipeline(args, tracer: Tracer, llm: Optional[LLM]) -> str:
             tracer.step("store", "code", "store card skipped", str(e)[:200])
         _save_run(run, tracer, llm, args.run_dir)
 
-    # Stage 6b: repeat run (second independent panel, same brands) and independent Wikipedia fame
+    # Stage 6b: repeat run (second panel, different personas, same persona model) and independent Wikipedia fame
     if args.repeat_export:
         try:
             from say import repeat
@@ -401,7 +401,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--persona-model-note")
     p.add_argument("--order", default="shuffled", choices=["shuffled", "fixed"])
     p.add_argument("--expect-n", type=int, help="abort unless the export has exactly this many personas")
-    p.add_argument("--repeat-export", help="second independent panel's CSV (shown as repeat_run)")
+    p.add_argument("--repeat-export", help="second panel's CSV (same persona model) (shown as repeat_run)")
     p.add_argument("--repeat-panel-id")
     p.add_argument("--repeat-recorded-at")
     p.add_argument("--extras", action="store_true", help="add EXPLORATORY checks (sensitivity, order, compression, crowd vs crowd)")

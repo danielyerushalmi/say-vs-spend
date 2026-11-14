@@ -1,6 +1,6 @@
 """Repeat-panel block for the run file's `repeat_run` field. Standard library only.
 
-A second, independent synthetic panel answers the same questions. We rank the same brands
+A second synthetic panel (different personas, same persona model) answers the same questions. We rank the same brands
 the same way as the main run and report how much the two crowds agree with each other.
 All numbers come from compare.py (code, never an LLM). Label: SYNTHETIC.
 

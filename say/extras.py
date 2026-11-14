@@ -6,7 +6,7 @@ Four blocks, each a dict with "label" and a plain-English "summary"; numbers rou
   2 that passed a recheck AFTER the 6-brand results were seen). Display only, never the verdict.
 - order_effect: does the position a brand was shown in (1..12) move its SAY / INTENT score?
 - compression: how squeezed the AI crowd's 1-10 answers are. Describes the AI only.
-- crowd_vs_crowd: do two independent AI crowds agree with each other more than with revenue?
+- crowd_vs_crowd: do two AI crowds (same persona model) agree with each other more than with revenue?
 
 All numbers come from code (compare.py math), never from an LLM.
 """
@@ -485,7 +485,7 @@ def compression(panel_responses: Sequence[dict], real_reference: Optional[dict] 
 def crowd_vs_crowd(main_panel_responses: Sequence[dict], repeat_panel_responses: Sequence[dict],
                    brand_ids: Sequence[str], revenue_by_brand: dict, n_boot: int = 2000,
                    seed: int = compare.DEFAULT_SEED) -> dict:
-    """Do two independent AI crowds agree with EACH OTHER more than either agrees with revenue?
+    """Do two AI crowds (same persona model) agree with EACH OTHER more than either agrees with revenue?
 
     Per question (say, intent, fame): Spearman of main vs repeat brand means, of each crowd vs
     revenue, and gap = crowd-crowd minus the BETTER of the two crowd-revenue numbers (it must

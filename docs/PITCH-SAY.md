@@ -1,4 +1,4 @@
-# Say vs. Spend: spoken pitch (DRAFT for Jayden)
+# Say vs. Spend: spoken pitch
 
 Every number below comes from `frontend/runs/say_latest.json`, except the recount (0 mismatches, from `say/audit/RECOUNT.md`) and commit times (git history). Exact p-values marked * are stored in the run file (`fame_wiki.agreement.p_exact`, `repeat_run.agreement.*.p_exact`). Only the buying ranking vs. revenue was pre-registered; every other score is EXPLORATORY. Read numbers off the screen, not from memory. Say "AI crowd" or "AI shoppers," never "people." Say "revenue," never "website sales." Each number has its label in brackets; the label is shown on screen, you don't need to read it aloud unless asked.
 
@@ -62,6 +62,6 @@ Trims if short on time, in order: cut the 8-brand -0.14, then "That's basically 
 - Don't call the second panel "independent" or "separate." Say: "a second panel of 200 different personas from the same persona model."
 - Don't imply any label is easy to reach. With 6 brands, "Trust it" needs a near-perfect ranking.
 - Don't say the AI crowd wrote the draft question, or that a model picked the brand or the label. Claude wrote the words [AI-generated]; code picked the brand and set the label.
-- Don't say the rule was never changed. Say: "We changed it once, at about 12:10, before any statistic. The change made 'Trust it' harder to get."
+- Don't say the rule was never changed. Say: "We changed it once, at about 12:10, before any statistic. The change made 'Trust it' harder to get. The 13:30 perception rule in the store-owner tool came after results, so it's labeled exploratory and never applies to buying."
 - Don't name stock tickers or say anything about investing.
 - Don't say Flashpoint is bad. Say: "This crowd, on these 6 brands, today, did not earn trust."
