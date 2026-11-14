@@ -1,0 +1,23 @@
+{
+  "id": "realreal",
+  "name": "The RealReal",
+  "description": "Sells authenticated used luxury clothing, handbags, watches and jewelry.",
+  "pass": false,
+  "fail_reason": "10-K describes an 'online marketplace' but states no online/own-website share and the company also operates retail stores.",
+  "cik": "0001573221",
+  "revenue_usd": 692845000,
+  "revenue_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "period_start": "2025-01-01",
+  "period_end": "2025-12-31",
+  "fiscal_year": "FY2025, ended 2025-12-31",
+  "accession": "0001573221-26-000010",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1573221/000157322126000010/real-20251231.htm",
+  "online_evidence_quote": null,
+  "online_evidence_url": "https://www.sec.gov/Archives/edgar/data/1573221/000157322126000010/real-20251231.htm",
+  "online_note": "FY2025 10-K calls itself an 'online marketplace' for resale luxury goods but gives no own-website vs retail-store sales split in the text found; company also runs retail stores. Fails frozen rule (b).",
+  "label": "MEASURED",
+  "verified_at": "2026-11-14T12:26:00-05:00",
+  "evidence_quote": null,
+  "evidence_url": "https://www.sec.gov/Archives/edgar/data/1573221/000157322126000010/real-20251231.htm",
+  "checked_at": "2026-11-14T12:26:00-05:00"
+}

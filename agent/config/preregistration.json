@@ -1,0 +1,13 @@
+{
+  "written_at": "2026-11-14T11:16:00-05:00",
+  "written_before_any_panel_result": true,
+  "stations_json_sha256_prefix": "685b897c9c4f6b9a",
+  "allowed_rule_features": ["borough", "wfh_share_pct", "median_income_local", "bachelors_pct"],
+  "trust_cutoffs_pp": {
+    "trust_it_below": 1.5,
+    "ask_real_people_above": 3.0,
+    "note": "Expected error (mean absolute gap, pp) at a new station after kept rules. Below 1.5 = trust it; 1.5 to 3.0 = double-check it; above 3.0 = ask real people. Why 3.0: real Mon-Fri patterns differ by about 2.7 pp between a hybrid-work station and a Bronx station (MTA, Oct 2026), so an error above that means the crowd cannot tell those neighborhoods apart."
+  },
+  "skeptic": "A rule is kept only if it matches >= 3 training stations, improves >= 3 in leave-one-out, and beats the dumb fix in leave-one-out.",
+  "headline": "Share of the 4 exam stations whose real error landed inside the band the agent predicted before the exam."
+}

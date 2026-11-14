@@ -1,0 +1,5 @@
+.git
+data
+docs/audit
+**/__pycache__
+**/*.pyc

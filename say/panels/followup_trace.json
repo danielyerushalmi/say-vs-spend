@@ -1,0 +1,90 @@
+[
+  {
+    "t": "2026-11-14T12:24:30-05:00",
+    "agent": "detective",
+    "step": "question_drafted",
+    "detail": "Why-questions drafted for the top gaps: ThredUp (crowd #1 vs revenue #5), Revolve (#6 vs #3), Hims & Hers (#3 vs #1). Per brand: INTENT 1-10 and open-ended WHY. Synthetic personas only.",
+    "tool": "none",
+    "survey_id": "540b434a-75e2-4ba5-8cbb-e363b9aa2d63",
+    "panel_id": "01a1db18-7a8c-734d-aba2-0d7965ee3135",
+    "run_id": "01a1db18-7a9b-7472-bed1-c79d9fb49000",
+    "n": 30
+  },
+  {
+    "t": "2026-11-14T12:25:29-05:00",
+    "agent": "detective",
+    "step": "survey_created",
+    "detail": "New draft survey, 9 items (3 brand blocks). survey_id=540b434a-75e2-4ba5-8cbb-e363b9aa2d63. Not published.",
+    "tool": "tool_survey",
+    "survey_id": "540b434a-75e2-4ba5-8cbb-e363b9aa2d63",
+    "panel_id": "01a1db18-7a8c-734d-aba2-0d7965ee3135",
+    "run_id": "01a1db18-7a9b-7472-bed1-c79d9fb49000",
+    "n": 30
+  },
+  {
+    "t": "2026-11-14T12:25:34-05:00",
+    "agent": "detective",
+    "step": "panel_job_started",
+    "detail": "create_and_run, 30 synthetic US adult online shoppers. job_id=01a1db17-d48a-7c93-b1ae-dda5825a7e1b",
+    "tool": "panel",
+    "survey_id": "540b434a-75e2-4ba5-8cbb-e363b9aa2d63",
+    "panel_id": "01a1db18-7a8c-734d-aba2-0d7965ee3135",
+    "run_id": "01a1db18-7a9b-7472-bed1-c79d9fb49000",
+    "n": 30
+  },
+  {
+    "t": "2026-11-14T12:26:17-05:00",
+    "agent": "detective",
+    "step": "panel_created",
+    "detail": "30/30 personas generated. panel_id=01a1db18-7a8c-734d-aba2-0d7965ee3135",
+    "tool": "panel",
+    "survey_id": "540b434a-75e2-4ba5-8cbb-e363b9aa2d63",
+    "panel_id": "01a1db18-7a8c-734d-aba2-0d7965ee3135",
+    "run_id": "01a1db18-7a9b-7472-bed1-c79d9fb49000",
+    "n": 30
+  },
+  {
+    "t": "2026-11-14T12:26:38-05:00",
+    "agent": "detective",
+    "step": "run_completed",
+    "detail": "30/30 COMPLETE. panel_id=01a1db18-7a8c-734d-aba2-0d7965ee3135 run_id=01a1db18-7a9b-7472-bed1-c79d9fb49000",
+    "tool": "panel",
+    "survey_id": "540b434a-75e2-4ba5-8cbb-e363b9aa2d63",
+    "panel_id": "01a1db18-7a8c-734d-aba2-0d7965ee3135",
+    "run_id": "01a1db18-7a9b-7472-bed1-c79d9fb49000",
+    "n": 30
+  },
+  {
+    "t": "2026-11-14T12:28:30-05:00",
+    "agent": "detective",
+    "step": "export_ready",
+    "detail": "Raw CSV export scoped to panel_id. The survey agent said 10 rows; the file has 30.",
+    "tool": "tool_survey",
+    "survey_id": "540b434a-75e2-4ba5-8cbb-e363b9aa2d63",
+    "panel_id": "01a1db18-7a8c-734d-aba2-0d7965ee3135",
+    "run_id": "01a1db18-7a9b-7472-bed1-c79d9fb49000",
+    "n": 30
+  },
+  {
+    "t": "2026-11-14T12:29:11-05:00",
+    "agent": "detective",
+    "step": "export_rows",
+    "detail": "Downloaded CSV: 2 header rows + 30 respondent rows, 30 unique IDs; repeated header row skipped.",
+    "tool": "curl",
+    "survey_id": "540b434a-75e2-4ba5-8cbb-e363b9aa2d63",
+    "panel_id": "01a1db18-7a8c-734d-aba2-0d7965ee3135",
+    "run_id": "01a1db18-7a9b-7472-bed1-c79d9fb49000",
+    "n": 30
+  },
+  {
+    "t": "2026-11-14T12:29:11-05:00",
+    "agent": "detective",
+    "step": "files_saved",
+    "detail": "Saved followup_export.csv, followup.json (30 WHY answers x 3 brands, verbatim), followup_trace.json.",
+    "tool": "local",
+    "survey_id": "540b434a-75e2-4ba5-8cbb-e363b9aa2d63",
+    "panel_id": "01a1db18-7a8c-734d-aba2-0d7965ee3135",
+    "run_id": "01a1db18-7a9b-7472-bed1-c79d9fb49000",
+    "n": 30
+  }
+]

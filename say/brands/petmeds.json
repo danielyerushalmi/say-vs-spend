@@ -1,0 +1,21 @@
+{
+  "id": "petmeds",
+  "name": "PetMed Express",
+  "description": "Sells pet medications and health products for dogs and cats.",
+  "pass": true,
+  "fail_reason": null,
+  "cik": "0001040130",
+  "revenue_usd": 179021000,
+  "revenue_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "period_start": "2025-04-01",
+  "period_end": "2026-03-31",
+  "fiscal_year": "FY2026, ended 2026-03-31",
+  "accession": "0001040130-26-000019",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1040130/000104013026000019/pets-20260331.htm",
+  "online_evidence_quote": "Founded in 1996, PetMeds is a pioneer in the direct-to-consumer pet healthcare sector. As a trusted national online pharmacy, PetMeds is licensed across all 50 states",
+  "online_evidence_url": "https://s204.q4cdn.com/312753843/files/doc_news/PetMeds-Announces-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results-2026.pdf",
+  "online_note": "IR FY2026 release. Self-description as an online pharmacy; no online percentage given and phone orders are not ruled out. Medium confidence.",
+  "label": "MEASURED",
+  "verified_at": "2026-11-14T12:03:00-05:00",
+  "evidence_confidence": "lower: 'national online pharmacy' is press-release wording (not found in its 10-Ks); no online share stated"
+}

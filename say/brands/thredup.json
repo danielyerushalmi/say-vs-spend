@@ -1,0 +1,20 @@
+{
+  "id": "thredup",
+  "name": "ThredUp",
+  "description": "Sells used clothing, shoes and accessories from many brands.",
+  "pass": true,
+  "fail_reason": null,
+  "cik": "0001484778",
+  "revenue_usd": 310813000,
+  "revenue_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "period_start": "2025-01-01",
+  "period_end": "2025-12-31",
+  "fiscal_year": "FY2025, ended 2025-12-31",
+  "accession": "0001484778-26-000007",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1484778/000148477826000007/tdup-20251231.htm",
+  "online_evidence_quote": "ThredUp has become one of the world's largest online resale platforms for apparel, shoes and accessories. ... Our proprietary operating platform is the foundation for our managed marketplace",
+  "online_evidence_url": "https://ir.thredup.com/news-releases/news-release-details/thredup-announces-fourth-quarter-and-full-year-2025-results/",
+  "online_note": "IR FY2025 release. No online percentage given. Release also mentions 'Resale-as-a-Service' for other brands' sites (share not quantified). Medium confidence.",
+  "label": "MEASURED",
+  "verified_at": "2026-11-14T12:03:00-05:00"
+}

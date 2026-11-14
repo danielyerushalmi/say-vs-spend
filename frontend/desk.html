@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>The desk · Say vs. Spend</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Inter:wght@400;500&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=50">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+        integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
+</head>
+<body class="desk-body">
+  <div id="sample-banner" class="sample-banner" role="status" hidden>SAMPLE DATA, NOT A RESULT. Every brand and number on this page is a placeholder.</div>
+  <header class="nav">
+    <a class="logo" href="index.html">Say <span>vs.</span> Spend</a>
+    <span id="run-badge" class="badge"></span>
+    <a class="cta-pill" href="index.html"><span aria-hidden="true">←</span> The study</a>
+  </header>
+  <p id="load-error" class="load-error" role="alert" hidden></p>
+
+  <main class="desk">
+    <section class="conv" aria-labelledby="desk-h">
+      <div class="log" id="log" aria-live="polite">
+        <div class="welcome">
+          <h1 id="desk-h">Ask the desk about the AI crowd.</h1>
+          <p>It answers from this study only: what the AI shoppers said, what the companies earned, and how far to trust the crowd. Every number says whether it is synthetic or measured.</p>
+        </div>
+      </div>
+      <p class="engine" id="engine">Answers from the run file</p>
+      <div class="suggest" id="suggest" role="group" aria-label="Suggested questions"></div>
+      <form class="ask" id="ask" autocomplete="off">
+        <label for="ask-input" class="sr-only">Your question</label>
+        <input id="ask-input" type="text" maxlength="400" placeholder="Ask about a brand, the verdict, or the crowd…">
+        <button type="submit">Ask</button>
+      </form>
+    </section>
+
+    <aside class="side" aria-label="Evidence">
+      <div class="tabs" role="tablist" aria-label="Evidence views">
+        <button class="tab" role="tab" id="t-ev" aria-controls="p-ev" aria-selected="true">Evidence</button>
+        <button class="tab" role="tab" id="t-crowd" aria-controls="p-crowd" aria-selected="false" tabindex="-1">Crowd</button>
+        <button class="tab" role="tab" id="t-verdict" aria-controls="p-verdict" aria-selected="false" tabindex="-1">Verdict</button>
+        <button class="tab tab-check" role="tab" id="t-check" aria-controls="p-check" aria-selected="false" tabindex="-1">Grade my website</button>
+      </div>
+      <div class="panel" id="p-ev" role="tabpanel" aria-labelledby="t-ev" data-lenis-prevent><div class="evidence" id="evidence"><p class="ev-empty">Cards for whatever you ask about show up here.</p></div></div>
+      <div class="panel" id="p-crowd" role="tabpanel" aria-labelledby="t-crowd" hidden>
+        <div class="wall-tools">
+          <label class="mono" for="wall-brand">Brand</label><select id="wall-brand" class="select"></select>
+          <label class="mono" for="wall-filter">Show</label><select id="wall-filter" class="select"></select>
+        </div>
+        <div class="bubbles" id="bubbles" role="list"></div>
+        <p class="legend mono dim"><span>Fill = how likely they say they'd buy</span><span>Dashed = never heard of it</span></p>
+        <div id="persona" class="persona" aria-live="polite"><p class="dim">Click a shopper to read their answers.</p></div>
+      </div>
+      <div class="panel" id="p-verdict" role="tabpanel" aria-labelledby="t-verdict" hidden><div id="verdict-panel" class="evidence"></div></div>
+      <div class="panel" id="p-check" role="tabpanel" aria-labelledby="t-check" hidden>
+        <div class="check">
+          <h2 class="check-h">Grade your website</h2>
+          <p class="dim">Paste your link. We load your real page and grade it, then show where it would sit next to the sites our Flashpoint crowd of AI shoppers rated.</p>
+          <form id="grade-form" class="check-form grade-form" autocomplete="off">
+            <label for="grade-url" class="mono">Your website link</label>
+            <div class="url-row"><input id="grade-url" type="text" inputmode="url" maxlength="500" required placeholder="https://your-store.com"><button type="submit">Grade it</button></div>
+          </form>
+          <div id="grade-result" class="evidence" aria-live="polite"></div>
+          <h3 class="check-h2">Then: how far to trust an AI crowd for your question</h3>
+          <div class="examples" id="check-examples" role="group" aria-label="Examples"></div>
+          <form id="check-form" class="check-form" autocomplete="off">
+            <label for="check-store" class="mono">What do you sell?</label>
+            <input id="check-store" maxlength="300" required placeholder="e.g. Hand-made soy candles">
+            <label for="check-q" class="mono">What do you want to ask an AI crowd?</label>
+            <input id="check-q" maxlength="300" required placeholder="e.g. Do people like my website design?">
+            <button type="submit">Check it</button>
+          </form>
+          <div id="check-result" class="evidence" aria-live="polite"></div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="common.js?v=48"></script>
+  <script src="desk.js?v=48"></script>
+</body>
+</html>

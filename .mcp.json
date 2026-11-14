@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "team-relay": {
+      "type": "http",
+      "url": "https://team-relay.vercel.app/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${TEAM_RELAY_TOKEN}"
+      }
+    }
+  }
+}

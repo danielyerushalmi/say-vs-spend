@@ -1,0 +1,2980 @@
+{
+ "panel_id": "FAKE TEST DATA",
+ "source_link": "https://example.invalid/FAKE-TEST-DATA",
+ "recorded_at": "2026-11-14T12:00:00-05:00",
+ "n_personas": 40,
+ "persona_model_note": "FAKE TEST DATA: random numbers, not Flashpoint output.",
+ "order": "shuffled",
+ "responses": [
+  {
+   "persona_id": "FAKE-001",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 9,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-001",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-001",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-001",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 2,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-001",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-001",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 3,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-001",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 4,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-001",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 3,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-002",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 10
+  },
+  {
+   "persona_id": "FAKE-002",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-002",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 6,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-002",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 7,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-002",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 9,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-002",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 4,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-002",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 5,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-002",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 6,
+   "intent": 1
+  },
+  {
+   "persona_id": "FAKE-003",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 10,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-003",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 5,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-003",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 4,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-003",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 9,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-003",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 5,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-003",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 5,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-003",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 5,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-003",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-004",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-004",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-004",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 9,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-004",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 5,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-004",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-004",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": null,
+   "say": 4,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-004",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 5,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-004",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 7,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-005",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 8,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-005",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 7,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-005",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-005",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 4,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-005",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 8,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-005",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": null,
+   "say": 4,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-005",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 4,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-005",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 4,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-006",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-006",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 8,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-006",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 9,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-006",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 3,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-006",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-006",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-006",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-006",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 6,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-007",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 10,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-007",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-007",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-007",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-007",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 4,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-007",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 6,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-007",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 4,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-007",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-008",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 10,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-008",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-008",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 9,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-008",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-008",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-008",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 5,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-008",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": null,
+   "say": null,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-008",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 3,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-009",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-009",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 8,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-009",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-009",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-009",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-009",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 8,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-009",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 5,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-009",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 3,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-010",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 9,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-010",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 5,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-010",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 8,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-010",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 4,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-010",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-010",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 4,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-010",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-010",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 6,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-011",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 10,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-011",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 7,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-011",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-011",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": null,
+   "say": 5,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-011",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-011",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-011",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 5,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-011",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-012",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 4,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-012",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": null,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-012",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 5,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-012",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-012",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 5,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-012",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 3,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-012",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-012",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 4,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-013",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 10,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-013",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 4,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-013",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 8,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-013",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 5,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-013",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-013",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 6,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-013",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-013",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 2,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-014",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 10
+  },
+  {
+   "persona_id": "FAKE-014",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 7,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-014",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": null,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-014",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": null,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-014",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 8,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-014",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 3,
+   "intent": 1
+  },
+  {
+   "persona_id": "FAKE-014",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 5,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-014",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-015",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 9,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-015",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 8,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-015",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 6,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-015",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 7,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-015",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-015",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 5,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-015",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 4,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-015",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 5,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-016",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 8,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-016",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-016",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 10,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-016",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 8,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-016",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-016",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 5,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-016",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 4,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-016",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 5,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-017",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 10,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-017",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": 10
+  },
+  {
+   "persona_id": "FAKE-017",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-017",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 7,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-017",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-017",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 4,
+   "intent": 1
+  },
+  {
+   "persona_id": "FAKE-017",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 3,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-017",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 4,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-018",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 9,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-018",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 6,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-018",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 8,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-018",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 4,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-018",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-018",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 5,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-018",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": 1
+  },
+  {
+   "persona_id": "FAKE-018",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 5,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-019",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-019",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-019",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 5,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-019",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-019",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-019",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 4,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-019",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 4,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-019",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 4,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-020",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 8,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-020",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 5,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-020",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-020",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 3,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-020",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 8,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-020",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 2,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-020",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-020",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-021",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 5,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-021",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 5,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-021",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-021",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 6,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-021",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-021",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 7,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-021",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 7,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-021",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 6,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-022",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 10,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-022",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 5,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-022",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 8,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-022",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 5,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-022",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-022",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 3,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-022",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-022",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 2,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-023",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 10,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-023",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": null,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-023",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 5,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-023",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-023",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 4,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-023",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-023",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 5,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-023",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 2,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-024",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 8,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-024",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-024",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-024",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 5,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-024",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-024",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 5,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-024",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 6,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-024",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 2,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-025",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 9,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-025",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 5,
+   "intent": 10
+  },
+  {
+   "persona_id": "FAKE-025",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-025",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 7,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-025",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": null,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-025",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-025",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 3,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-025",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 5,
+   "intent": 1
+  },
+  {
+   "persona_id": "FAKE-026",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 8,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-026",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 8,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-026",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 9,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-026",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 5,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-026",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 3,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-026",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 5,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-026",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 7,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-026",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 4,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-027",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-027",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-027",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 8,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-027",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": null,
+   "say": 3,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-027",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-027",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 3,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-027",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 5,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-027",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 1,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-028",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 8,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-028",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-028",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 9,
+   "intent": 10
+  },
+  {
+   "persona_id": "FAKE-028",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 2,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-028",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-028",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 5,
+   "intent": 1
+  },
+  {
+   "persona_id": "FAKE-028",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 4,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-028",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 3,
+   "intent": 1
+  },
+  {
+   "persona_id": "FAKE-029",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-029",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-029",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-029",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-029",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-029",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 4,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-029",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 3,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-029",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 3,
+   "intent": 1
+  },
+  {
+   "persona_id": "FAKE-030",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 9,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-030",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-030",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-030",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-030",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-030",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 4,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-030",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 5,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-030",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 3,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-031",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-031",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 8,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-031",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-031",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-031",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 6,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-031",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 7,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-031",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 5,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-031",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 5,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-032",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-032",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 5,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-032",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 9,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-032",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 7,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-032",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 8,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-032",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-032",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": true,
+   "say": 2,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-032",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "mid",
+   "aware": false,
+   "say": 3,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-033",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-033",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-033",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 8,
+   "intent": 10
+  },
+  {
+   "persona_id": "FAKE-033",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 4,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-033",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-033",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": true,
+   "say": 7,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-033",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 5,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-033",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "mid",
+   "aware": false,
+   "say": 2,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-034",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 10,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-034",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 5,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-034",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": null,
+   "say": 9,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-034",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 5,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-034",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 8,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-034",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": true,
+   "say": 5,
+   "intent": 1
+  },
+  {
+   "persona_id": "FAKE-034",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 5,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-034",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "high",
+   "aware": false,
+   "say": 4,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-035",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-035",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 5,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-035",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": true,
+   "say": 6,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-035",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 6,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-035",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 7,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-035",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 4,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-035",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 7,
+   "intent": null
+  },
+  {
+   "persona_id": "FAKE-035",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "high",
+   "aware": false,
+   "say": 1,
+   "intent": 1
+  },
+  {
+   "persona_id": "FAKE-036",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 9,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-036",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 8,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-036",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-036",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-036",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 7,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-036",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": false,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-036",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 5,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-036",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "high",
+   "aware": true,
+   "say": 8,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-037",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": null,
+   "say": 9,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-037",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 10,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-037",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 4,
+   "intent": 8
+  },
+  {
+   "persona_id": "FAKE-037",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-037",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-037",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 4,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-037",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 7,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-037",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "low",
+   "aware": false,
+   "say": 5,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-038",
+   "brand_id": "fake-a",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 10,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-038",
+   "brand_id": "fake-b",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 7,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-038",
+   "brand_id": "fake-c",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 9
+  },
+  {
+   "persona_id": "FAKE-038",
+   "brand_id": "fake-d",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-038",
+   "brand_id": "fake-e",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 8,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-038",
+   "brand_id": "fake-f",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 7,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-038",
+   "brand_id": "fake-g",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": true,
+   "say": 8,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-038",
+   "brand_id": "fake-h",
+   "age_group": "35-54",
+   "income_group": "low",
+   "aware": false,
+   "say": 1,
+   "intent": 3
+  },
+  {
+   "persona_id": "FAKE-039",
+   "brand_id": "fake-a",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 7,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-039",
+   "brand_id": "fake-b",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 6,
+   "intent": 10
+  },
+  {
+   "persona_id": "FAKE-039",
+   "brand_id": "fake-c",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 8,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-039",
+   "brand_id": "fake-d",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 6,
+   "intent": 7
+  },
+  {
+   "persona_id": "FAKE-039",
+   "brand_id": "fake-e",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": true,
+   "say": 10,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-039",
+   "brand_id": "fake-f",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": null,
+   "say": 7,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-039",
+   "brand_id": "fake-g",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": null,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-039",
+   "brand_id": "fake-h",
+   "age_group": "55+",
+   "income_group": "low",
+   "aware": false,
+   "say": 1,
+   "intent": 5
+  },
+  {
+   "persona_id": "FAKE-040",
+   "brand_id": "fake-a",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 8,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-040",
+   "brand_id": "fake-b",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-040",
+   "brand_id": "fake-c",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 6,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-040",
+   "brand_id": "fake-d",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 8,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-040",
+   "brand_id": "fake-e",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 9,
+   "intent": 6
+  },
+  {
+   "persona_id": "FAKE-040",
+   "brand_id": "fake-f",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 5,
+   "intent": 2
+  },
+  {
+   "persona_id": "FAKE-040",
+   "brand_id": "fake-g",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": true,
+   "say": 3,
+   "intent": 4
+  },
+  {
+   "persona_id": "FAKE-040",
+   "brand_id": "fake-h",
+   "age_group": "18-34",
+   "income_group": "mid",
+   "aware": false,
+   "say": 4,
+   "intent": 2
+  }
+ ],
+ "fake_brands": [
+  {
+   "id": "fake-a",
+   "name": "FAKE Brand A",
+   "description": "FAKE TEST DATA brand, does not exist.",
+   "pass": true,
+   "revenue_usd": 900000000,
+   "fiscal_year": "FAKE",
+   "filing_url": "https://example.invalid/FAKE",
+   "online_note": "FAKE TEST DATA",
+   "label": "FAKE TEST DATA"
+  },
+  {
+   "id": "fake-b",
+   "name": "FAKE Brand B",
+   "description": "FAKE TEST DATA brand, does not exist.",
+   "pass": true,
+   "revenue_usd": 600000000,
+   "fiscal_year": "FAKE",
+   "filing_url": "https://example.invalid/FAKE",
+   "online_note": "FAKE TEST DATA",
+   "label": "FAKE TEST DATA"
+  },
+  {
+   "id": "fake-c",
+   "name": "FAKE Brand C",
+   "description": "FAKE TEST DATA brand, does not exist.",
+   "pass": true,
+   "revenue_usd": 420000000,
+   "fiscal_year": "FAKE",
+   "filing_url": "https://example.invalid/FAKE",
+   "online_note": "FAKE TEST DATA",
+   "label": "FAKE TEST DATA"
+  },
+  {
+   "id": "fake-d",
+   "name": "FAKE Brand D",
+   "description": "FAKE TEST DATA brand, does not exist.",
+   "pass": true,
+   "revenue_usd": 300000000,
+   "fiscal_year": "FAKE",
+   "filing_url": "https://example.invalid/FAKE",
+   "online_note": "FAKE TEST DATA",
+   "label": "FAKE TEST DATA"
+  },
+  {
+   "id": "fake-e",
+   "name": "FAKE Brand E",
+   "description": "FAKE TEST DATA brand, does not exist.",
+   "pass": true,
+   "revenue_usd": 210000000,
+   "fiscal_year": "FAKE",
+   "filing_url": "https://example.invalid/FAKE",
+   "online_note": "FAKE TEST DATA",
+   "label": "FAKE TEST DATA"
+  },
+  {
+   "id": "fake-f",
+   "name": "FAKE Brand F",
+   "description": "FAKE TEST DATA brand, does not exist.",
+   "pass": true,
+   "revenue_usd": 150000000,
+   "fiscal_year": "FAKE",
+   "filing_url": "https://example.invalid/FAKE",
+   "online_note": "FAKE TEST DATA",
+   "label": "FAKE TEST DATA"
+  },
+  {
+   "id": "fake-g",
+   "name": "FAKE Brand G",
+   "description": "FAKE TEST DATA brand, does not exist.",
+   "pass": true,
+   "revenue_usd": 90000000,
+   "fiscal_year": "FAKE",
+   "filing_url": "https://example.invalid/FAKE",
+   "online_note": "FAKE TEST DATA",
+   "label": "FAKE TEST DATA"
+  },
+  {
+   "id": "fake-h",
+   "name": "FAKE Brand H",
+   "description": "FAKE TEST DATA brand, does not exist.",
+   "pass": true,
+   "revenue_usd": 60000000,
+   "fiscal_year": "FAKE",
+   "filing_url": "https://example.invalid/FAKE",
+   "online_note": "FAKE TEST DATA",
+   "label": "FAKE TEST DATA"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+  "label": "SYNTHETIC (AI crowd averages, computed by code)",
+  "source": "say/panels/q4_export.csv",
+  "panel_id": "01a1db0a-5b35-7f4a-956d-79e1585ada17",
+  "n_brands": 12,
+  "brands": [
+    {
+      "id": "bark",
+      "name": "BARK",
+      "description": "Sells dog toys, treats and monthly themed boxes for pets.",
+      "say_mean": 6.06,
+      "intent_mean": 2.975,
+      "n": 200
+    },
+    {
+      "id": "carparts",
+      "name": "CarParts.com",
+      "description": "Sells replacement auto parts and accessories for cars and trucks.",
+      "say_mean": 5.74,
+      "intent_mean": 3.885,
+      "n": 200
+    },
+    {
+      "id": "figs",
+      "name": "FIGS",
+      "description": "Sells scrubs and other apparel for healthcare workers.",
+      "say_mean": 5.74,
+      "intent_mean": 2.69,
+      "n": 200
+    },
+    {
+      "id": "flowers",
+      "name": "1-800-Flowers",
+      "description": "Sells flowers, plants and gift baskets for delivery.",
+      "say_mean": 6.955,
+      "intent_mean": 5.37,
+      "n": 200
+    },
+    {
+      "id": "hims",
+      "name": "Hims & Hers",
+      "description": "Sells prescription and over-the-counter treatments for hair, skin, sexual health and weight loss.",
+      "say_mean": 6.275,
+      "intent_mean": 3.635,
+      "n": 200
+    },
+    {
+      "id": "lulus",
+      "name": "Lulus",
+      "description": "Sells women's dresses, event wear and casual clothing.",
+      "say_mean": 5.89,
+      "intent_mean": 3.19,
+      "n": 200
+    },
+    {
+      "id": "petmeds",
+      "name": "PetMed Express",
+      "description": "Sells pet medications and health products for dogs and cats.",
+      "say_mean": 6.05,
+      "intent_mean": 3.63,
+      "n": 200
+    },
+    {
+      "id": "realreal",
+      "name": "The RealReal",
+      "description": "Sells authenticated used luxury clothing, handbags, watches and jewelry.",
+      "say_mean": 6.105,
+      "intent_mean": 3.32,
+      "n": 200
+    },
+    {
+      "id": "revolve",
+      "name": "Revolve",
+      "description": "Sells apparel, shoes, accessories and beauty products from many fashion labels.",
+      "say_mean": 6.465,
+      "intent_mean": 2.845,
+      "n": 200
+    },
+    {
+      "id": "rtr",
+      "name": "Rent the Runway",
+      "description": "Rents and sells designer dresses and clothing through a subscription.",
+      "say_mean": 6.04,
+      "intent_mean": 2.875,
+      "n": 200
+    },
+    {
+      "id": "stitchfix",
+      "name": "Stitch Fix",
+      "description": "Mails stylist-picked clothing and accessories to customers, who keep what they like.",
+      "say_mean": 6.255,
+      "intent_mean": 3.72,
+      "n": 200
+    },
+    {
+      "id": "thredup",
+      "name": "ThredUp",
+      "description": "Sells used clothing, shoes and accessories from many brands.",
+      "say_mean": 6.035,
+      "intent_mean": 4.255,
+      "n": 200
+    }
+  ],
+  "note": "All 12 rated brands, including the 6 left out of the main revenue result. EXPLORATORY."
+}

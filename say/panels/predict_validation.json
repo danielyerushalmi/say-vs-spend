@@ -1,0 +1,151 @@
+{
+  "ok": true,
+  "label": "EXPLORATORY (leave-one-out on 12 brands)",
+  "model": "claude-sonnet-5-5",
+  "model_error": {
+    "say_mean": 0.289,
+    "intent_mean": 0.414
+  },
+  "baseline_error": {
+    "say_mean": 0.257,
+    "intent_mean": 0.6
+  },
+  "model_beats_baseline": {
+    "say_mean": false,
+    "intent_mean": true
+  },
+  "per_brand": [
+    {
+      "id": "bark",
+      "actual": {
+        "say_mean": 6.06,
+        "intent_mean": 2.975
+      },
+      "predicted": {
+        "say_mean": 6.3,
+        "intent_mean": 3.5
+      }
+    },
+    {
+      "id": "carparts",
+      "actual": {
+        "say_mean": 5.74,
+        "intent_mean": 3.885
+      },
+      "predicted": {
+        "say_mean": 6.2,
+        "intent_mean": 4.1
+      }
+    },
+    {
+      "id": "figs",
+      "actual": {
+        "say_mean": 5.74,
+        "intent_mean": 2.69
+      },
+      "predicted": {
+        "say_mean": 6.2,
+        "intent_mean": 2.7
+      }
+    },
+    {
+      "id": "flowers",
+      "actual": {
+        "say_mean": 6.955,
+        "intent_mean": 5.37
+      },
+      "predicted": {
+        "say_mean": 6.2,
+        "intent_mean": 3.9
+      }
+    },
+    {
+      "id": "hims",
+      "actual": {
+        "say_mean": 6.275,
+        "intent_mean": 3.635
+      },
+      "predicted": {
+        "say_mean": 6.2,
+        "intent_mean": 3.3
+      }
+    },
+    {
+      "id": "lulus",
+      "actual": {
+        "say_mean": 5.89,
+        "intent_mean": 3.19
+      },
+      "predicted": {
+        "say_mean": 6.3,
+        "intent_mean": 3.3
+      }
+    },
+    {
+      "id": "petmeds",
+      "actual": {
+        "say_mean": 6.05,
+        "intent_mean": 3.63
+      },
+      "predicted": {
+        "say_mean": 6.0,
+        "intent_mean": 3.6
+      }
+    },
+    {
+      "id": "realreal",
+      "actual": {
+        "say_mean": 6.105,
+        "intent_mean": 3.32
+      },
+      "predicted": {
+        "say_mean": 6.2,
+        "intent_mean": 3.0
+      }
+    },
+    {
+      "id": "revolve",
+      "actual": {
+        "say_mean": 6.465,
+        "intent_mean": 2.845
+      },
+      "predicted": {
+        "say_mean": 6.1,
+        "intent_mean": 3.4
+      }
+    },
+    {
+      "id": "rtr",
+      "actual": {
+        "say_mean": 6.04,
+        "intent_mean": 2.875
+      },
+      "predicted": {
+        "say_mean": 6.0,
+        "intent_mean": 2.9
+      }
+    },
+    {
+      "id": "stitchfix",
+      "actual": {
+        "say_mean": 6.255,
+        "intent_mean": 3.72
+      },
+      "predicted": {
+        "say_mean": 5.9,
+        "intent_mean": 3.1
+      }
+    },
+    {
+      "id": "thredup",
+      "actual": {
+        "say_mean": 6.035,
+        "intent_mean": 4.255
+      },
+      "predicted": {
+        "say_mean": 6.2,
+        "intent_mean": 3.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "label": "MEASURED (Wikipedia pageviews)",
+  "source": "Wikimedia REST API per-article pageviews, en.wikipedia, all-access, user, daily, summed over the 365 days ending yesterday",
+  "user_agent": "HackTheUnreachable student research project (no-reply)",
+  "start": "20251114",
+  "end": "20261113",
+  "url_template": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/{title}/daily/{start}/{end}",
+  "brands": {
+    "figs": {
+      "title": "Figs_(company)",
+      "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Figs_(company)/daily/20251114/20261113",
+      "views_365d": 20915,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": "2026-11-14T17:25:47+00:00",
+      "status": "ok",
+      "note": "",
+      "n_days": 365
+    },
+    "hims": {
+      "title": "Hims_&_Hers_Health",
+      "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hims_%26_Hers_Health/daily/20251114/20261113",
+      "views_365d": 107995,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": "2026-11-14T17:25:49+00:00",
+      "status": "ok",
+      "note": "",
+      "n_days": 365
+    },
+    "revolve": {
+      "title": null,
+      "url": null,
+      "views_365d": null,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": null,
+      "status": "no_article",
+      "note": "No English Wikipedia article found (Revolve Group, Revolve (company), Revolve Clothing checked 2026-11-14: all missing). Views left null, not guessed."
+    },
+    "stitchfix": {
+      "title": "Stitch_Fix",
+      "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Stitch_Fix/daily/20251114/20261113",
+      "views_365d": 26592,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": "2026-11-14T17:25:51+00:00",
+      "status": "ok",
+      "note": "",
+      "n_days": 365
+    },
+    "thredup": {
+      "title": "ThredUp",
+      "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/ThredUp/daily/20251114/20261113",
+      "views_365d": 12820,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": "2026-11-14T17:25:53+00:00",
+      "status": "ok",
+      "note": "",
+      "n_days": 365
+    },
+    "lulus": {
+      "title": null,
+      "url": null,
+      "views_365d": null,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": null,
+      "status": "no_article",
+      "note": "No English Wikipedia article found (Lulus, Lulus.com, Lulu's checked 2026-11-14: all missing). Views left null, not guessed."
+    },
+    "flowers": {
+      "title": "1-800-Flowers.com,_Inc.",
+      "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/1-800-Flowers.com,_Inc./daily/20251114/20261113",
+      "views_365d": 21885,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": "2026-11-14T17:25:54+00:00",
+      "status": "ok",
+      "note": "",
+      "n_days": 365
+    },
+    "bark": {
+      "title": "BarkBox",
+      "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/BarkBox/daily/20251114/20261113",
+      "views_365d": 11137,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": "2026-11-14T17:25:56+00:00",
+      "status": "uncertain_title",
+      "note": "Article is BarkBox (the product/brand of BARK, Inc.); there is no article titled BARK, Inc. Likely the right company, but the article may be about the BarkBox subscription rather than the whole company.",
+      "n_days": 365
+    },
+    "realreal": {
+      "title": "The_RealReal",
+      "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/The_RealReal/daily/20251114/20261113",
+      "views_365d": 36018,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": "2026-11-14T17:25:58+00:00",
+      "status": "ok",
+      "note": "",
+      "n_days": 365
+    },
+    "rtr": {
+      "title": "Rent_the_Runway",
+      "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Rent_the_Runway/daily/20251114/20261113",
+      "views_365d": 17560,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": "2026-11-14T17:26:00+00:00",
+      "status": "ok",
+      "note": "",
+      "n_days": 365
+    },
+    "petmeds": {
+      "title": "PetMed_Express",
+      "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/PetMed_Express/daily/20251114/20261113",
+      "views_365d": 5613,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": "2026-11-14T17:26:01+00:00",
+      "status": "ok",
+      "note": "",
+      "n_days": 365
+    },
+    "carparts": {
+      "title": null,
+      "url": null,
+      "views_365d": null,
+      "start": "20251114",
+      "end": "20261113",
+      "fetched_at": null,
+      "status": "no_article",
+      "note": "No English Wikipedia article found (CarParts.com, Carparts.com, CarParts checked 2026-11-14: all missing). Views left null, not guessed."
+    }
+  }
+}

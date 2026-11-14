@@ -1,0 +1,92 @@
+{
+ "station_id": "359",
+ "panel_id": "01a1dadc-108b-74d6-a7f9-ba3a6d1f40d0",
+ "source_link": "panel id 01a1dadc-108b-74d6-a7f9-ba3a6d1f40d0 (run 01a1dadc-1094-7c21-b8b1-1a8214e4e3e8; create-step panel 01a1dadc-108d-7942-b781-96fee5023d8a); no app.flashpoint.ai link returned",
+ "recorded_at": "2026-11-14T11:33:00-05:00",
+ "n": 100,
+ "counts": {
+  "Mon": 46,
+  "Tue": 83,
+  "Wed": 61,
+  "Thu": 77,
+  "Fri": 29,
+  "None": 8
+ },
+ "demographics": {
+  "wfh_share_pct": null,
+  "transit_share_pct": null,
+  "median_income_local": null,
+  "bachelors_pct": null,
+  "county_median_income": 74692,
+  "local_estimates_source": "Flashpoint demographics aiInsights (web-sourced, ESTIMATE)"
+ },
+ "fit_score": null,
+ "raw": {
+  "job_id": "01a1dad8-e75a-7611-82a8-984960b35dfa",
+  "status": "completed",
+  "message": "Done",
+  "run_id": "01a1dadc-1094-7c21-b8b1-1a8214e4e3e8",
+  "survey_id": "3c3fd275-16dc-4a3c-b3ff-b3c2805661e2",
+  "calibration_version": "uncalibrated",
+  "inference_model": "gpt-5.4-mini",
+  "run_duration_ms": 12623,
+  "job_created_utc": "2026-11-14T16:16:50",
+  "job_updated_utc": "2026-11-14T16:20:30",
+  "county": "Brooklyn",
+  "frequency_patterns_as_returned": [
+   {
+    "selected": "Mon,Tue,Wed,Thu",
+    "n": 21
+   },
+   {
+    "selected": "Mon,Tue,Wed,Thu,Fri",
+    "n": 19
+   },
+   {
+    "selected": "Tue,Thu",
+    "n": 14
+   },
+   {
+    "selected": "Tue,Wed,Thu",
+    "n": 12
+   },
+   {
+    "selected": "Tue",
+    "n": 10
+   },
+   {
+    "selected": "None",
+    "n": 8
+   },
+   {
+    "selected": "Tue,Thu,Fri",
+    "n": 5
+   },
+   {
+    "selected": "Mon,Wed,Fri",
+    "n": 3
+   },
+   {
+    "selected": "Mon,Wed,Thu",
+    "n": 2
+   },
+   {
+    "selected": "Tue,Wed,Thu,Fri",
+    "n": 2
+   },
+   {
+    "selected": "Wed",
+    "n": 2
+   },
+   {
+    "selected": "Thu",
+    "n": 1
+   },
+   {
+    "selected": "Mon,Thu",
+    "n": 1
+   }
+  ],
+  "counts_note": "per-option counts tallied from returned response patterns; no local WFH/transit/income/bachelors estimates stated by Flashpoint (county-level only)"
+ }
+}

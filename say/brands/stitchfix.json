@@ -1,0 +1,20 @@
+{
+  "id": "stitchfix",
+  "name": "Stitch Fix",
+  "description": "Mails stylist-picked clothing and accessories to customers, who keep what they like.",
+  "pass": true,
+  "fail_reason": null,
+  "cik": "0001576942",
+  "revenue_usd": 1348119000,
+  "revenue_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "period_start": "2025-08-03",
+  "period_end": "2026-08-01",
+  "fiscal_year": "FY2026, ended 2026-08-01",
+  "accession": "0001628280-26-063365",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1576942/000162828026063365/sfix-20260801.htm",
+  "online_evidence_quote": "the leading online personal styling service ... Clients check out a Fix when they indicate what items they are keeping through our mobile application or on our website.",
+  "online_evidence_url": "https://investors.stitchfix.com/news-events/press-releases/news-details/2026/Stitch-Fix-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+  "online_note": "FY2026 release (revenue $1,348,119K matches the XBRL figure). No percentage stated; every purchase is described as made in the app or on the website. curl got a challenge page here; Scrapling plain request returned the page (no bypass options used).",
+  "label": "MEASURED",
+  "verified_at": "2026-11-14T12:03:00-05:00"
+}

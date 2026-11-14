@@ -1,0 +1,71 @@
+# FAKE TEST DATA - invented for unit tests. NOT real people, NOT real answers.
+# 12 made-up respondents; respondent 12 answered only thredup and hims.
+respondent_n,brand_id,bought_12m,age_band
+1,thredup,yes,under 25
+1,hims,no,under 25
+1,stitchfix,yes,under 25
+1,revolve,no,under 25
+1,bark,no,under 25
+1,petmeds,no,under 25
+2,thredup,yes,under 25
+2,hims,no,under 25
+2,stitchfix,no,under 25
+2,revolve,yes,under 25
+2,bark,no,under 25
+2,petmeds,no,under 25
+3,thredup,yes,25-44
+3,hims,no,25-44
+3,stitchfix,no,25-44
+3,revolve,no,25-44
+3,bark,no,25-44
+3,petmeds,no,25-44
+4,thredup,no,
+4,hims,yes,
+4,stitchfix,no,
+4,revolve,no,
+4,bark,no,
+4,petmeds,no,
+5,thredup,no,45+
+5,hims,no,45+
+5,stitchfix,yes,45+
+5,revolve,no,45+
+5,bark,no,45+
+5,petmeds,no,45+
+6,thredup,no,under 25
+6,hims,no,under 25
+6,stitchfix,no,under 25
+6,revolve,yes,under 25
+6,bark,no,under 25
+6,petmeds,no,under 25
+7,thredup,no,25-44
+7,hims,no,25-44
+7,stitchfix,no,25-44
+7,revolve,yes,25-44
+7,bark,no,25-44
+7,petmeds,no,25-44
+8,thredup,no,
+8,hims,no,
+8,stitchfix,no,
+8,revolve,no,
+8,bark,no,
+8,petmeds,yes,
+9,thredup,no,under 25
+9,hims,no,under 25
+9,stitchfix,no,under 25
+9,revolve,no,under 25
+9,bark,no,under 25
+9,petmeds,no,under 25
+10,thredup,no,
+10,hims,no,
+10,stitchfix,no,
+10,revolve,no,
+10,bark,no,
+10,petmeds,no,
+11,thredup,no,25-44
+11,hims,no,25-44
+11,stitchfix,no,25-44
+11,revolve,no,25-44
+11,bark,no,25-44
+11,petmeds,no,25-44
+12,thredup,no,under 25
+12,hims,no,under 25

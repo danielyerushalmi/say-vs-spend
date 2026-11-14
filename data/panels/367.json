@@ -1,0 +1,88 @@
+{
+ "station_id": "367",
+ "panel_id": "01a1dadb-4d1f-788e-846d-2859d48e740c",
+ "source_link": "panel id 01a1dadb-4d1f-788e-846d-2859d48e740c (run 01a1dadb-4d25-7f21-b278-5ef0e14b2699; create-step panel 01a1dadb-4d21-77e7-9405-eb6f158e8074); no app.flashpoint.ai link returned",
+ "recorded_at": "2026-11-14T11:33:00-05:00",
+ "n": 100,
+ "counts": {
+  "Mon": 76,
+  "Tue": 84,
+  "Wed": 71,
+  "Thu": 81,
+  "Fri": 59,
+  "None": 6
+ },
+ "demographics": {
+  "wfh_share_pct": null,
+  "transit_share_pct": null,
+  "median_income_local": null,
+  "bachelors_pct": null,
+  "county_median_income": 47036,
+  "local_estimates_source": "Flashpoint demographics aiInsights (web-sourced, ESTIMATE)"
+ },
+ "fit_score": null,
+ "raw": {
+  "job_id": "01a1dad8-e661-7ff3-b6f3-0c844556fdcf",
+  "status": "completed",
+  "message": "Done",
+  "run_id": "01a1dadb-4d25-7f21-b278-5ef0e14b2699",
+  "survey_id": "3c3fd275-16dc-4a3c-b3ff-b3c2805661e2",
+  "calibration_version": "uncalibrated",
+  "inference_model": "gpt-5.4-mini",
+  "run_duration_ms": 12532,
+  "job_created_utc": "2026-11-14T16:16:50",
+  "job_updated_utc": "2026-11-14T16:19:40",
+  "county": "Bronx",
+  "frequency_patterns_as_returned": [
+   {
+    "selected": "Mon,Tue,Wed,Thu,Fri",
+    "n": 45
+   },
+   {
+    "selected": "Mon,Tue,Wed,Thu",
+    "n": 18
+   },
+   {
+    "selected": "Tue,Thu",
+    "n": 13
+   },
+   {
+    "selected": "Mon,Wed,Fri",
+    "n": 7
+   },
+   {
+    "selected": "None",
+    "n": 6
+   },
+   {
+    "selected": "Mon,Tue,Thu,Fri",
+    "n": 3
+   },
+   {
+    "selected": "Tue,Thu,Fri",
+    "n": 2
+   },
+   {
+    "selected": "Tue",
+    "n": 2
+   },
+   {
+    "selected": "Mon,Fri",
+    "n": 1
+   },
+   {
+    "selected": "Mon,Tue,Wed",
+    "n": 1
+   },
+   {
+    "selected": "Mon",
+    "n": 1
+   },
+   {
+    "selected": "Fri",
+    "n": 1
+   }
+  ],
+  "counts_note": "per-option counts tallied from returned response patterns; no local WFH/transit/income/bachelors estimates stated by Flashpoint (county-level only)"
+ }
+}

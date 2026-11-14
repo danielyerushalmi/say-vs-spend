@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Say vs. Spend</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Inter:wght@400;500&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=50">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+        integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+        integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"
+        integrity="sha384-O55L/6rhHr9CFvrxqv5luxOCcmVaBmETbZbJDP+Do8T0pztTACsFBD/IXCNkj7DV" crossorigin="anonymous"></script>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body class="landing">
+  <div id="sample-banner" class="sample-banner" role="status" hidden>SAMPLE DATA, NOT A RESULT. Every brand and number on this page is a placeholder.</div>
+
+  <header class="nav">
+    <a class="logo" href="index.html">Say <span>vs.</span> Spend</a>
+    <span id="run-badge" class="badge"></span>
+    <a class="cta-pill" href="desk.html">Ask the desk <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main>
+    <p id="load-error" class="load-error" role="alert" hidden></p>
+
+    <!-- HERO: the icebergs -->
+    <section class="hero" id="hero" aria-labelledby="hero-h">
+      <canvas id="sea" aria-hidden="true"></canvas>
+      <div class="hero-copy">
+        <p class="eyebrow">A trust layer for AI focus groups · built on Flashpoint</p>
+        <h1 id="hero-h">Which AI focus-group answers can you <em>bet on</em>?</h1>
+        <p class="lede" id="hero-lede">We ran Flashpoint's AI shoppers on real online brands and checked them against SEC revenue. Above the water is what they <b>said</b>. Below it is what the companies <b>earned</b>. Tap a brand.</p>
+      </div>
+      <p class="waterline-tag above" aria-hidden="true">↑ WHAT THE CROWD SAID · AI SHOPPERS · SYNTHETIC</p>
+      <p class="waterline-tag below" aria-hidden="true">↓ WHAT THE COMPANIES EARNED · YEARLY REVENUE · MEASURED</p>
+      <div class="berg-labels" id="berg-labels" aria-hidden="true"></div>
+      <div class="depth-ruler" id="depth-ruler" aria-hidden="true"></div>
+      <a class="hero-result" id="hero-result" href="#verdict" hidden></a>
+      <div class="hero-ui">
+        <div class="brand-picker" id="brand-picker" role="group" aria-label="Pick a brand"></div>
+        <div class="berg-card" id="berg-card" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- WEBSITE REPORT CARD -->
+    <section class="grades-sec" id="grades" aria-labelledby="grades-h">
+      <div class="section-intro">
+        <h2 id="grades-h" class="section-title">Website report card</h2>
+        <p id="grades-intro">Graded by a Flashpoint crowd of AI shoppers. Each one answered: “How good do you think this brand's website is?” on a 1 to 10 scale.</p>
+      </div>
+      <div class="grades" id="grades-grid" role="list"></div>
+      <p class="grades-proof" id="grades-proof"></p>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how" aria-labelledby="how-h">
+      <h2 id="how-h" class="section-title">How it works</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-n">1</span>
+          <h3>The crowd says</h3>
+          <p id="how-1">One Flashpoint panel of AI shoppers rates each brand: is the site good, would you buy, have you heard of it.</p>
+        </li>
+        <li class="step">
+          <span class="step-n">2</span>
+          <h3>The money says</h3>
+          <p>Each company's own SEC 10-K filing gives its real yearly revenue: the money that actually came in.</p>
+        </li>
+        <li class="step">
+          <span class="step-n">3</span>
+          <h3>Code decides the trust</h3>
+          <p>We compare the two rankings. A rule written down before any result turns the match into a label: trust it, double-check it, or ask real people.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- GAME: how deep does it go? -->
+    <section class="game-sec" id="game" aria-labelledby="game-h">
+      <div class="section-intro">
+        <h2 id="game-h" class="section-title">How deep does it go?</h2>
+        <p>The tips show how much the AI crowd said it would buy. Drag each brand down to how much money you think it really makes. Then see if you beat the crowd.</p>
+      </div>
+      <div class="tank" id="tank" role="group" aria-label="Your guesses"></div>
+      <p class="game-key mono"><span class="k-guess"></span> your guess <span class="k-truth"></span> real revenue (after you lock in) · drag the coral handles</p>
+      <div class="game-actions">
+        <button class="btn btn-coral" id="game-lock" type="button">Lock in my guesses</button>
+        <button class="btn" id="game-reset" type="button">Reset</button>
+      </div>
+      <div class="game-result" id="game-result" aria-live="polite"></div>
+    </section>
+
+    <!-- VERDICT: one reveal -->
+    <section class="verdict-sec" id="verdict" aria-labelledby="verdict-h">
+      <h2 id="verdict-h" class="section-title">Which Flashpoint answers can you bet on?</h2>
+      <button class="sonar-btn" id="reveal" type="button" aria-expanded="false" aria-controls="verdict-body">
+        <span class="sonar" aria-hidden="true"></span>
+        <span class="sonar-label">Reveal the verdict</span>
+      </button>
+      <div class="verdict-body" id="verdict-body" hidden></div>
+    </section>
+
+    <section class="end-cta">
+      <h2>Grade your website.</h2>
+      <p class="impact">Built for small online stores that can't afford a real focus group: paste your link to get a check of your real page with fixes, next to the AI crowd's typical website scores (an estimate), and know which AI answers to act on and which to double-check.</p>
+      <p class="feasible mono" id="feasible"></p>
+      <div class="cta-row"><a class="btn btn-coral btn-big" href="desk.html#check">Rate my website →</a><a class="btn btn-big btn-ghost" href="desk.html">Ask the desk</a></div>
+    </section>
+
+    <footer class="footer">
+      <p class="mono">LIMITS</p>
+      <ul id="limits" class="limits"></ul>
+      <p id="panel-note" class="panel-note"></p>
+      <p class="foot mono"><span>Built with Flashpoint.AI and Claude</span><span id="run-file"></span></p>
+    </footer>
+  </main>
+
+  <script src="common.js?v=48"></script>
+  <script src="landing.js?v=48"></script>
+  <script type="module" src="sea.js?v=48"></script>
+</body>
+</html>

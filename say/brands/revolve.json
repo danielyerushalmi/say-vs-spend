@@ -1,0 +1,20 @@
+{
+  "id": "revolve",
+  "name": "Revolve",
+  "description": "Sells apparel, shoes, accessories and beauty products from many fashion labels.",
+  "pass": true,
+  "fail_reason": null,
+  "cik": "0001746618",
+  "revenue_usd": 1225682000,
+  "revenue_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "period_start": "2025-01-01",
+  "period_end": "2025-12-31",
+  "fiscal_year": "FY2025, ended 2025-12-31",
+  "accession": "0001193125-26-071307",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1746618/000119312526071307/rvlv-20251231.htm",
+  "online_evidence_quote": "a go-to online source for discovery and inspiration ... We sell merchandise through two complementary segments, REVOLVE and FWRD, that leverage one platform.",
+  "online_evidence_url": "https://investors.revolve.com/news/news-details/2026/Revolve-Group-Announces-Second-Quarter-2026-Financial-Results/default.aspx",
+  "online_note": "IR release (Q2 2026) lists 'our e-commerce business model' as a risk and measures orders 'across our platform'; it states no online percentage. Physical retail is described as an early investment, no sales figure given. Medium confidence.",
+  "label": "MEASURED",
+  "verified_at": "2026-11-14T12:03:00-05:00"
+}

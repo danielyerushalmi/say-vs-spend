@@ -1,0 +1,67 @@
+{
+ "station_id": "1",
+ "panel_id": "01a1dada-32bf-7171-b2de-25ddf759f588",
+ "source_link": "panel_id 01a1dada-32bf-7171-b2de-25ddf759f588 (no app.flashpoint.ai link returned)",
+ "recorded_at": "2026-11-14T11:32:00-05:00",
+ "n": 100,
+ "counts": {
+  "Mon": 60,
+  "Tue": 87,
+  "Wed": 66,
+  "Thu": 86,
+  "Fri": 38,
+  "None": 13
+ },
+ "demographics": {
+  "wfh_share_pct": 12.2,
+  "transit_share_pct": 62.4,
+  "median_income_local": null,
+  "bachelors_pct": null,
+  "county_median_income": 82431,
+  "local_estimates_source": "Flashpoint demographics aiInsights (web-sourced, ESTIMATE)"
+ },
+ "fit_score": null,
+ "raw": {
+  "job_id": "01a1dad8-6f56-78d3-b538-752f42b5fdcf",
+  "status": "completed: Done",
+  "run_time": "2m09s",
+  "create_panel_id": "01a1dada-32c1-7aa3-89cf-116f8493e77f",
+  "run_id": "01a1dada-32c9-7a23-ad24-cfeffc8f7d24",
+  "survey_id": "3c3fd275-16dc-4a3c-b3ff-b3c2805661e2",
+  "frequency_table_combinations": [
+   [
+    "Mon,Tue,Wed,Thu,Fri",
+    31
+   ],
+   [
+    "Mon,Tue,Wed,Thu",
+    26
+   ],
+   [
+    "Tue,Thu",
+    18
+   ],
+   [
+    "None",
+    13
+   ],
+   [
+    "Tue,Wed,Thu",
+    4
+   ],
+   [
+    "Tue,Wed,Thu,Fri",
+    4
+   ],
+   [
+    "Mon,Tue,Thu,Fri",
+    3
+   ],
+   [
+    "Tue,Wed",
+    1
+   ]
+  ],
+  "note": "Combination rows relayed by Flashpoint surveys agent (tool_survey); per-option counts recomputed locally from those rows; rows sum to 100. chat tool timed out. Panel id in run result differs from create result id."
+ }
+}

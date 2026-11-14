@@ -1,0 +1,23 @@
+{
+  "id": "rtr",
+  "name": "Rent the Runway",
+  "description": "Rents and sells designer dresses and clothing through a subscription.",
+  "pass": false,
+  "fail_reason": "No stated online share and no 'primarily through our website/app' statement found.",
+  "cik": "0001468327",
+  "revenue_usd": 329800000,
+  "revenue_concept": "Revenues",
+  "period_start": "2025-02-01",
+  "period_end": "2026-01-31",
+  "fiscal_year": "FY2025, ended 2026-01-31",
+  "accession": "0001468327-26-000020",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000020/wdq-20260131.htm",
+  "online_evidence_quote": null,
+  "online_evidence_url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000020/wdq-20260131.htm",
+  "online_note": "No statement of own-website/app sales share found in the 10-K text returned or the IR release. Fails frozen rule (b).",
+  "label": "MEASURED",
+  "verified_at": "2026-11-14T12:26:00-05:00",
+  "evidence_quote": null,
+  "evidence_url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000020/wdq-20260131.htm",
+  "checked_at": "2026-11-14T12:26:00-05:00"
+}

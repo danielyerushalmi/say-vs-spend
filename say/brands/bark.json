@@ -1,0 +1,20 @@
+{
+  "id": "bark",
+  "name": "BARK",
+  "description": "Sells dog toys, treats and monthly themed boxes for pets.",
+  "pass": true,
+  "fail_reason": null,
+  "cik": "0001819574",
+  "revenue_usd": 394843000,
+  "revenue_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "period_start": "2025-04-01",
+  "period_end": "2026-03-31",
+  "fiscal_year": "FY2026, ended 2026-03-31",
+  "accession": "0001628280-26-042242",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026042242/bark-20260331.htm",
+  "online_evidence_quote": "Total Direct to Consumer $324,927 | Commerce 69,916 | Revenue $394,843 (in thousands, fiscal year ended March 31, 2026)",
+  "online_evidence_url": "https://investors.bark.co/news/news-details/2026/BARK-Reports-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+  "online_note": "DTC = 82.3% of revenue (324,927 / 394,843). Remaining 17.7% is 'Commerce' sold through retail partners (Target, Chewy, Amazon). DTC is the company's own sales; the release does not say 'website' in the same sentence, so this assumes DTC means own site/app.",
+  "label": "MEASURED",
+  "verified_at": "2026-11-14T12:03:00-05:00"
+}

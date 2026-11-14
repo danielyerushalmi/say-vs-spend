@@ -1,0 +1,23 @@
+{
+  "id": "lulus",
+  "name": "Lulus",
+  "description": "Sells women's dresses, event wear and casual clothing.",
+  "pass": false,
+  "fail_reason": "No stated own-website/e-commerce share and no clear 'primarily through our website/app' statement; 10-K says 'primarily operates direct-to-consumer' while wholesale grew 144% (FY2025).",
+  "cik": "0001780201",
+  "revenue_usd": 282284000,
+  "revenue_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "period_start": "2024-12-30",
+  "period_end": "2025-12-28",
+  "fiscal_year": "FY2025, ended 2025-12-28",
+  "accession": "0001104659-26-036884",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1780201/000110465926036884/lvlu-20251228x10k.htm",
+  "online_evidence_quote": null,
+  "online_evidence_url": "https://www.sec.gov/Archives/edgar/data/1780201/000110465926036884/lvlu-20251228x10k.htm",
+  "online_note": "FY2025 10-K says 'Our brand primarily operates direct-to-consumer' and 'one of the first digitally-native fashion brands', but also 'wholesale business grew 144%' and 'A growing portion of our revenue is derived from wholesale partners'. No own-website/app share and 'direct-to-consumer' does not name the website. Fails frozen rule (b). Snippets only; sec.gov fetch blocked (403).",
+  "label": "MEASURED",
+  "verified_at": "2026-11-14T12:26:00-05:00",
+  "evidence_quote": null,
+  "evidence_url": "https://www.sec.gov/Archives/edgar/data/1780201/000110465926036884/lvlu-20251228x10k.htm",
+  "checked_at": "2026-11-14T12:26:00-05:00"
+}

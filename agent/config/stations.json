@@ -1,0 +1,20 @@
+{
+  "question": "In a typical week, which weekday mornings (6-10 AM) do you ride the subway from your home station? Select all: Mon, Tue, Wed, Thu, Fri, None.",
+  "window": {"start": "2026-10-05T00:00:00", "end": "2026-10-31T00:00:00", "hour_from": 6, "hour_to": 10},
+  "selection_note": "Picked 2026-11-14 11:00 ET from MTA 5wq4-mkjj (Oct 5-30 2026, 6-10 AM entries). Tiers by Mon-Fri share spread (max minus min): high > 9pp, mid 4-7pp, flat < 4.5pp. Residential choice is a judgment call (THINK), not verified.",
+  "exam_draw": "random.Random(20261114): one station per tier, plus one more from the rest. Exam stations are locked: no rule may be tuned on them.",
+  "stations": [
+    {"id": "41",  "name": "7 Av (B,Q)",                    "borough": "Brooklyn", "tier": "high", "split": "train"},
+    {"id": "477", "name": "72 St (Q)",                     "borough": "Manhattan","tier": "high", "split": "train"},
+    {"id": "177", "name": "Clinton-Washington Avs (C)",    "borough": "Brooklyn", "tier": "high", "split": "train"},
+    {"id": "120", "name": "Bedford Av (L)",                "borough": "Brooklyn", "tier": "high", "split": "exam"},
+    {"id": "1",   "name": "Astoria-Ditmars Blvd (N,W)",    "borough": "Queens",   "tier": "mid",  "split": "train"},
+    {"id": "36",  "name": "Bay Ridge Av (R)",              "borough": "Brooklyn", "tier": "mid",  "split": "train"},
+    {"id": "51",  "name": "Kings Hwy (B,Q)",               "borough": "Brooklyn", "tier": "mid",  "split": "train"},
+    {"id": "261", "name": "Forest Hills-71 Av (E,F,M,R)",  "borough": "Queens",   "tier": "mid",  "split": "exam"},
+    {"id": "367", "name": "St Lawrence Av (6)",            "borough": "Bronx",    "tier": "flat", "split": "train"},
+    {"id": "388", "name": "167 St (4)",                    "borough": "Bronx",    "tier": "flat", "split": "train"},
+    {"id": "254", "name": "Jamaica-179 St (F)",            "borough": "Queens",   "tier": "flat", "split": "exam"},
+    {"id": "359", "name": "Flatbush Av-Brooklyn College (2,5)", "borough": "Brooklyn", "tier": "flat", "split": "exam"}
+  ]
+}
