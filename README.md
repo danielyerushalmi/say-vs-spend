@@ -2,6 +2,8 @@
 
 **A tool that tests whether an AI focus group can be trusted, by checking it first against an answer that is already known.**
 
+Every small business wants to know what customers will actually buy. AI shoppers can answer in minutes, for almost nothing. Crowd Check tells you if you can bet your money on those answers.
+
 **Study 1: Say vs. Spend.** Did 200 AI shoppers rank 6 online brands the way real money ranks them?
 
 <p align="center">
