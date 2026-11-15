@@ -187,10 +187,11 @@ def parse_csv_text(text: str, brand_ids: set[str]) -> list[dict]:
 # ----------------------------------------------------------------------------- scoring
 
 def _question_for(brand: dict, run: dict) -> str:
-    """The draft question's exact wording for its own brand; the parallel template for the others."""
-    tc = run.get("trust_card") or {}
-    if tc.get("draft_question") and tc.get("draft_question_brand") == brand["id"]:
-        return tc["draft_question"]
+    """The one uniform yes/no buying question, the same wording for every brand.
+
+    The scoring counts yes/no buying answers only, so trust_card.draft_question (drafted text that may be
+    subjective) is never used here. It is reported separately as draft_question and never scored.
+    """
     return BRAND_QUESTION_TEMPLATE.format(name=brand.get("name", brand["id"]))
 
 
@@ -270,6 +271,7 @@ def score(rows: list[dict], run: dict) -> dict:
         "run_id": run.get("run_id"),
         "draft_question": tc.get("draft_question"),
         "draft_question_brand": focus,
+        "draft_question_scored": False,  # reported only; every scored answer used the uniform question
         "confidence": CONFIDENCE,
         "interval_method": f"Wilson score interval, 90%, z = {Z90:.10f}",
         "brands": out_brands,
@@ -288,12 +290,14 @@ def script_text(run: dict) -> str:
     q = tc.get("draft_question")
     lines = [f"Run: {run.get('run_id')}", f"Consent line: \"{CONSENT_LINE}\"", ""]
     if q:
-        lines.append(f"MAIN QUESTION (trust_card.draft_question, brand {tc.get('draft_question_brand')}):")
+        lines.append(f"DRAFTED FOLLOW-UP (trust_card.draft_question, brand {tc.get('draft_question_brand')}), "
+                     "not scored, keep its answers out of the tally CSV:")
         lines.append(f"  {q}")
     else:
-        lines.append("MAIN QUESTION: none in this run file (trust_card.draft_question is empty).")
+        lines.append("DRAFTED FOLLOW-UP: none in this run file (trust_card.draft_question is empty).")
     lines.append("")
-    lines.append("OPTIONAL, same yes/no for every brand (brand_id -> question):")
+    lines.append("SCORED: ask the same yes/no buying question for every brand (brand_id -> question).")
+    lines.append("Only these answers go in the tally CSV:")
     for b in run.get("brands") or []:
         lines.append(f"  {b['id']:<10} {_question_for(b, run)}")
     return "\n".join(lines)

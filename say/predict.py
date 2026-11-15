@@ -38,6 +38,7 @@ BRANDS_DIR = os.path.join(HERE, "brands")
 MAX_LEN = 300
 FIELDS = ("say_mean", "intent_mean")
 
+NO_PREDICTION = "No usable model prediction returned; average used."
 LABEL = "ESTIMATE: predicted AI-crowd score (SYNTHETIC), not what real shoppers think"
 REALITY_NOTE = ("A good prediction of the AI crowd is not a prediction of real buyers: on the 6 main brands "
                 "the crowd's buying ranking matched real revenue at only 0.03.")
@@ -172,13 +173,13 @@ def predict(store: str, data: dict, validation: dict | None = None, llm=None) ->
     else:
         for k, name in (("say_mean", "website score"), ("intent_mean", "buy score")):
             if not beats.get(k):
-                used = "model did not beat the average, so the average is used"
+                used = "(model did not beat the average, so the average is used)."
             elif pred is not None:
-                used = "model used"
-            else:
-                used = "model beat the average in testing, but no usable model prediction was returned, so the average is used"
+                used = "(model used)."
+            else:  # no key, failed call or bad response: one fixed wording for every fallback
+                used = f"(model beat the average in testing). {NO_PREDICTION}"
             why.append(f"{name}: model typical error {validation['model_error'][k]} vs {base[k]} for guessing the "
-                       f"average ({used}).")
+                       f"average {used}")
         why.append("Tested on 12 well-known public brands only. Claude may already know them, so its error on an "
                    "unknown small store may be larger (UNVERIFIED).")
     return {

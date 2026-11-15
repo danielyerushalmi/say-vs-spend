@@ -1,4 +1,4 @@
-/* Say vs. Spend: the desk. A conversation (left) + evidence (right: Evidence / Crowd / Verdict tabs).
+/* Crowd Check, Study 1 (Say vs. Spend): the desk. A conversation (left) + evidence (right: Evidence / Crowd / Verdict tabs).
    Answers come from the run file in the browser. If server.py has Claude available, free-text
    questions go to Claude (grounded in the same run file) and are labeled AI-generated. */
 (() => {
@@ -109,7 +109,7 @@
     }
     if (/rate (my|our)|my (website|site|store|shop|brand|business)|our (website|site|store)|focus group/.test(ql)) {
       showTab('check'); $('#grade-url').focus()
-      return ['Paste your website link in the "Grade your website" box on the right. It loads your real page, grades it, and shows where it would sit next to the sites the Flashpoint crowd rated.']
+      return ['Paste your website link in the "Grade your website" box on the right. It loads your real page, grades it, and shows the range of scores the earlier Flashpoint crowd gave real brands (an ESTIMATE: no new crowd rates your site).']
     }
     if (/crowd|people|shopper|persona|who/.test(ql)) {
       showTab('crowd')
@@ -213,6 +213,7 @@
   }
 
   /* ---------------- check my crowd (say/trust_check.py via /api/trust-check) ---------------- */
+  const CHECK_WAIT_MS = 12000  // ~12 s browser fallback for the two check requests
   const EXAMPLES = [
     ['Rate my website', 'My online candle shop', 'Do people like my website design?'],
     ['Will they buy?', 'Hand-made soy candles', 'Will people buy my new pumpkin scent?'],
@@ -226,14 +227,18 @@
     const store = $('#check-store').value.trim(), question = $('#check-q').value.trim(), out = $('#check-result')
     if (!store || !question) { $(store ? '#check-q' : '#check-store').focus(); return }
     out.textContent = ''; out.append(h('p', { class: 'dim' }, 'Checking against the study…'))
+    // Browser fallback: never wait more than CHECK_WAIT_MS. The server gives each model call ~10 s and then
+    // answers from code (the crowd's average), so this only fires if the server itself is stuck.
+    const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), CHECK_WAIT_MS)
     try {
-      const post = (url, body) => fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
-      const [r, rp] = await Promise.all([post('/api/trust-check', { store, question, run_path: window.SS.path }), post('/api/predict', { store }).catch(() => null)])
+      const post = (url, body) => fetch(url, { method: 'POST', signal: ctl.signal, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+      const [r, rp] = await Promise.all([post('/api/trust-check', { store, question, run_path: window.SS.path }), post('/api/predict', { store }).then(x => x.ok ? x.json() : null).catch(() => null)])
       const j = await r.json()
       if (!r.ok) throw new Error(j.error || 'check failed')
-      const pj = rp && rp.ok ? await rp.json() : null
+      const pj = rp
       out.textContent = ''
       if (pj && isNum(pj.predicted_website_score)) out.append(predictCard(pj))
+      else if (ctl.signal.aborted) out.append(h('p', { class: 'dim small' }, `The AI-crowd score did not arrive within ${CHECK_WAIT_MS / 1000} s, so it is left out.`))
       const src = str(j.question_source), byModel = /^model/i.test(src)
       put(out,
         h('article', { class: 'ev new' },
@@ -251,8 +256,10 @@
       if (HAS_GSAP && !REDUCED) gsap.from(out.children, { y: 14, opacity: 0, stagger: 0.07, duration: 0.4, ease: 'power3.out' })
     } catch (e) {
       out.textContent = ''
-      out.append(h('p', { class: 'dim' }, 'The check runs on the local server. Start it with: python3 frontend/server.py (' + str(e.message) + ')'))
-    }
+      out.append(h('p', { class: 'dim' }, e && e.name === 'AbortError'
+        ? `The server took longer than ${CHECK_WAIT_MS / 1000} s, so the check stopped. Try again in a moment.`
+        : 'The check runs on the local server. Start it with: python3 frontend/server.py (' + str(e.message) + ')'))
+    } finally { clearTimeout(timer) }
   }
   function predictCard(p) {
     const [lo, hi] = Array.isArray(p.crowd_range_12_brands && p.crowd_range_12_brands.website) ? p.crowd_range_12_brands.website : [5, 8]

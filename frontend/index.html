@@ -4,17 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:,">
-<title>Say vs. Spend</title>
+<title>Crowd Check · Study 1: Say vs. Spend</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Inter:wght@400;500&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=51">
+<link rel="stylesheet" href="styles.css?v=52">
+<!-- CDN scripts are deferred (non-blocking). Animation code checks they exist, so the page and its data still work if they fail. -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
-        integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
+        integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
-        integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous"></script>
+        integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"
-        integrity="sha384-O55L/6rhHr9CFvrxqv5luxOCcmVaBmETbZbJDP+Do8T0pztTACsFBD/IXCNkj7DV" crossorigin="anonymous"></script>
+        integrity="sha384-O55L/6rhHr9CFvrxqv5luxOCcmVaBmETbZbJDP+Do8T0pztTACsFBD/IXCNkj7DV" crossorigin="anonymous" defer></script>
 <script type="importmap">
 { "imports": {
   "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
@@ -26,7 +27,7 @@
   <div id="sample-banner" class="sample-banner" role="status" hidden>SAMPLE DATA, NOT A RESULT. Every brand and number on this page is a placeholder.</div>
 
   <header class="nav">
-    <a class="logo" href="index.html">Say <span>vs.</span> Spend</a>
+    <a class="logo" href="index.html">Crowd Check <small class="logo-study">Study 1: Say vs. Spend</small></a>
     <span id="run-badge" class="badge"></span>
     <a class="cta-pill" href="desk.html">Ask the desk <span aria-hidden="true">→</span></a>
   </header>
@@ -112,7 +113,7 @@
 
     <section class="end-cta">
       <h2>Grade your website.</h2>
-      <p class="impact">Built for small online stores that can't afford a real focus group: paste your link to get a check of your real page with fixes, next to the AI crowd's typical website scores (an estimate), and see which AI answers held up in our test and which to double-check.</p>
+      <p class="impact">Built for small online stores that can't afford a real focus group: paste your link to get a check of your real page with fixes, next to the average website score our earlier AI crowd gave real brands (ESTIMATE: no new crowd rates your site), and see which AI answers held up in our test and which to double-check.</p>
       <p class="feasible mono" id="feasible"></p>
       <div class="cta-row"><a class="btn btn-coral btn-big" href="desk.html#check">Grade my website →</a><a class="btn btn-big btn-ghost" href="desk.html">Ask the desk</a></div>
     </section>
@@ -125,8 +126,8 @@
     </footer>
   </main>
 
-  <script src="common.js?v=51"></script>
-  <script src="landing.js?v=51"></script>
-  <script type="module" src="sea.js?v=51"></script>
+  <script src="common.js?v=52" defer></script>
+  <script src="landing.js?v=52" defer></script>
+  <script type="module" src="sea.js?v=52"></script>
 </body>
 </html>

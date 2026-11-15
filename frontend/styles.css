@@ -1,4 +1,4 @@
-/* Say vs. Spend: Waterline
+/* Crowd Check (Study 1: Say vs. Spend): Waterline
    The page is a sea. Above the line: what people SAY (light, sky). Below: what they SPEND (deep, sea).
    One accent: coral (a buoy marker). Smooth surfaces, no grain. */
 :root {
@@ -49,6 +49,8 @@ button { font: inherit; color: inherit; }
 .landing .nav { mix-blend-mode: normal; }
 .logo { font-family: var(--display); font-weight: 600; font-size: 20px; text-decoration: none; letter-spacing: -0.02em; }
 .logo span { font-weight: 300; color: var(--coral-d); }
+.logo .logo-study { font-weight: 300; font-size: 13px; letter-spacing: 0; margin-left: 6px; color: var(--coral-d); }
+.desk-body .logo .logo-study { color: var(--coral); }
 .badge { font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: oklch(98% 0.008 210 / 0.7); backdrop-filter: blur(8px); }
 .cta-pill { margin-left: auto; text-decoration: none; background: var(--ink); color: var(--foam); padding: 10px 18px; border-radius: 999px; font-weight: 500; font-size: 15px; transition: background .2s, transform .2s; }
 .cta-pill:hover { background: var(--coral-d); transform: translateY(-1px); }
@@ -253,6 +255,7 @@ button { font: inherit; color: inherit; }
   .nav { gap: 10px; padding: 12px var(--gut); }
   .badge { display: none; }
   .logo { white-space: nowrap; font-size: 18px; }
+  .logo .logo-study { display: none; }
   .cta-pill { padding: 8px 14px; font-size: 14px; white-space: nowrap; }
   .hero h1 { font-size: clamp(30px, 8.4vw, 40px); }
   .lede { font-size: 16px; }

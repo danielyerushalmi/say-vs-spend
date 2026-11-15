@@ -1,4 +1,4 @@
-"""Say vs. Spend: local server for the page + the chat desk. Standard library only.
+"""Crowd Check (Study 1: Say vs. Spend): local server for the page + the chat desk. Standard library only.
 
     python3 frontend/server.py            # then open http://localhost:3001
 
@@ -52,7 +52,46 @@ except Exception:  # noqa: BLE001
 MODEL = os.environ.get("SAY_CHAT_MODEL", "claude-sonnet-5-5")  # team pick: Sonnet 5.5
 MAX_CALLS = int(os.environ.get("SAY_CHAT_MAX_CALLS", "20"))  # stop switch for the demo
 RUN_RE = re.compile(r"^runs/[\w.-]+\.json$")
-LLM_CLIENT = LLM(max_calls=MAX_CALLS, timeout=20) if HAVE_WRAPPER else None
+# Page requests must answer fast: one model call waits at most LLM_TIMEOUT seconds and is never retried,
+# so trust_check/predict fall back to their code answer instead of holding the page. MAX_CALLS still caps spend.
+LLM_TIMEOUT = float(os.environ.get("SAY_CHAT_TIMEOUT", "10"))
+
+
+def _no_retry(_secs):
+    """Used as the wrapper's backoff sleep: instead of waiting and retrying a 429/5xx, give up now."""
+    raise LLMError("API busy; not retried for page requests")
+
+
+LLM_CLIENT = LLM(max_calls=MAX_CALLS, timeout=LLM_TIMEOUT, sleep=_no_retry) if HAVE_WRAPPER else None
+
+# String / list fields each POST route accepts. A field may be missing or null; otherwise it must have this type.
+BODY_FIELDS = {
+    "chat": (("run_path",), ("messages",)),
+    "trust-check": (("store", "question", "run_path"), ()),
+    "predict": (("store",), ()),
+    "grade-site": (("url",), ()),
+}
+
+
+def parse_body(raw: bytes, route: str) -> dict:
+    """Parse a POST body. Raises ValueError (sent back as HTTP 400) unless it is a JSON object whose
+    known fields have the right types. Shared with api/index.py so both servers behave the same."""
+    data = json.loads(raw or b"{}")
+    if not isinstance(data, dict):
+        raise ValueError("request body must be a JSON object")
+    str_fields, list_fields = BODY_FIELDS.get(route, ((), ()))
+    for k in str_fields:
+        if data.get(k) is not None and not isinstance(data[k], str):
+            raise ValueError(f"'{k}' must be a string")
+    for k in list_fields:
+        if data.get(k) is not None and not isinstance(data[k], list):
+            raise ValueError(f"'{k}' must be a list")
+    return data
+
+
+def body_length(header_value, limit: int) -> int:
+    """Content-Length clamped to 0..limit (a negative value would make read() wait for the socket to close)."""
+    return max(0, min(int(header_value or 0), limit))
 
 SYSTEM = """You are "the desk" on the Say vs. Spend page, built at a hackathon.
 An AI crowd (one Flashpoint synthetic panel of US shoppers) rated online brands. Their answers
@@ -264,10 +303,8 @@ class Handler(SimpleHTTPRequestHandler):
     def do_POST(self):
         if self.path.split("?")[0] == "/api/grade-site":
             try:
-                n = min(int(self.headers.get("Content-Length", "0")), 4_000)
-                data = json.loads(self.rfile.read(n) or b"{}")
-                if not isinstance(data, dict):
-                    raise ValueError("request body must be a JSON object")
+                n = body_length(self.headers.get("Content-Length"), 4_000)
+                data = parse_body(self.rfile.read(n), "grade-site")
                 return self._json(200, grade_site(str(data.get("url", ""))[:500]))
             except ValueError as e:
                 return self._json(400, {"error": str(e)})
@@ -280,10 +317,8 @@ class Handler(SimpleHTTPRequestHandler):
             if crowd_predict is None:
                 return self._json(503, {"error": "predictor not available"})
             try:
-                n = min(int(self.headers.get("Content-Length", "0")), 8_000)
-                data = json.loads(self.rfile.read(n) or b"{}")
-                if not isinstance(data, dict):
-                    raise ValueError("request body must be a JSON object")
+                n = body_length(self.headers.get("Content-Length"), 8_000)
+                data = parse_body(self.rfile.read(n), "predict")
                 return self._json(200, crowd_predict.predict(str(data.get("store", "")), PRED_DATA, PRED_VAL, llm=LLM_CLIENT))
             except ValueError as e:
                 return self._json(400, {"error": str(e)})
@@ -291,10 +326,8 @@ class Handler(SimpleHTTPRequestHandler):
             if trust_check is None:
                 return self._json(503, {"error": "trust check not available"})
             try:
-                n = min(int(self.headers.get("Content-Length", "0")), 8_000)
-                data = json.loads(self.rfile.read(n) or b"{}")
-                if not isinstance(data, dict):
-                    raise ValueError("request body must be a JSON object")
+                n = body_length(self.headers.get("Content-Length"), 8_000)
+                data = parse_body(self.rfile.read(n), "trust-check")
                 run = load_run(data.get("run_path") or "runs/say_latest.json")
                 return self._json(200, trust_check.check(str(data.get("store", "")), str(data.get("question", "")), run, llm=LLM_CLIENT))
             except (ValueError, FileNotFoundError) as e:
@@ -304,10 +337,8 @@ class Handler(SimpleHTTPRequestHandler):
         if not HAVE_WRAPPER:
             return self._json(503, {"error": "Claude wrapper (agent/llm.py) not available"})
         try:
-            n = min(int(self.headers.get("Content-Length", "0")), 64_000)
-            data = json.loads(self.rfile.read(n) or b"{}")
-            if not isinstance(data, dict):
-                raise ValueError("request body must be a JSON object")
+            n = body_length(self.headers.get("Content-Length"), 64_000)
+            data = parse_body(self.rfile.read(n), "chat")
             reply = chat_reply(data.get("messages") or [], data.get("run_path") or "runs/sample.json")
             return self._json(200, {"reply": reply})
         except NoKey:
@@ -325,5 +356,5 @@ class Handler(SimpleHTTPRequestHandler):
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", "3001"))
-    print(f"Say vs. Spend on http://localhost:{port}  (Claude desk: {'on' if HAVE_WRAPPER and os.environ.get('ANTHROPIC_API_KEY') else 'off'})")
+    print(f"Crowd Check on http://localhost:{port}  (Claude desk: {'on' if HAVE_WRAPPER and os.environ.get('ANTHROPIC_API_KEY') else 'off'})")
     ThreadingHTTPServer(("127.0.0.1", port), Handler).serve_forever()

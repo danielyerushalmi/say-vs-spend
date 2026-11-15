@@ -4,7 +4,10 @@ Run it from the repo root, in the terminal where ANTHROPIC_API_KEY is set:
 
     python3 -m say.run --export say/panels/main_export.csv --panel-id <id> --recorded-at <iso>
         [--followup say/panels/followup.json] [--store say/panels/store_run.json]
-        [--no-llm] [--run-dir frontend/runs] [--max-calls 30]
+        [--no-llm] [--run-dir frontend/runs] [--max-calls 30] [--panel-out <folder>]
+
+A scratch rebuild that writes nothing inside the repo sends both outputs to one folder:
+    python3 -m say.run ... --run-dir /tmp/x --panel-out /tmp/x
 
 Stages (each one prints a trace line; the page file say_latest.json is rewritten after
 stages 3 to 7, and say_progress.json after stages 1 and 2):
@@ -167,12 +170,28 @@ def _store_stats(store: dict) -> dict:
             for k in ("say_mean", "intent_mean", "aware_share")} if s else {}
 
 
+def _panel_outputs(args) -> tuple[str, str]:
+    """Where the normalized panel and the follow-up question go.
+
+    Default (no --panel-out): main_run.json and followup_question.txt beside the export, as before.
+    --panel-out <folder> (any path not ending in .json; created if missing): both files go in that folder.
+    --panel-out <file.json>: the panel goes there and followup_question.txt goes in the same folder.
+    So a scratch rebuild with --panel-out /tmp/x writes nothing next to the export.
+    """
+    if not args.panel_out:
+        panels_dir = os.path.dirname(os.path.abspath(args.export))
+        return (os.path.relpath(os.path.join(panels_dir, "main_run.json")),
+                os.path.join(panels_dir, "followup_question.txt"))
+    out = args.panel_out
+    if os.path.isdir(out) or not out.lower().endswith(".json"):
+        return os.path.join(out, "main_run.json"), os.path.join(out, "followup_question.txt")
+    return out, os.path.join(os.path.dirname(os.path.abspath(out)), "followup_question.txt")
+
+
 # ---------- the pipeline ----------
 
 def run_pipeline(args, tracer: Tracer, llm: Optional[LLM]) -> str:
-    panels_dir = os.path.dirname(os.path.abspath(args.export))
-    panel_out = args.panel_out or os.path.relpath(os.path.join(panels_dir, "main_run.json"))
-    question_out = os.path.join(panels_dir, "followup_question.txt")
+    panel_out, question_out = _panel_outputs(args)
 
     # Stage 1: brands
     all_brands = load_all_brand_files(args.brands_dir)
@@ -396,7 +415,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--run-dir", default="frontend/runs")
     p.add_argument("--max-calls", type=int, default=30, help="hard cap on model calls")
     p.add_argument("--brands-dir", default="say/brands")
-    p.add_argument("--panel-out", help="where to save the normalized panel (default: main_run.json next to the export)")
+    p.add_argument("--panel-out", help="folder (or .json file) for the normalized panel AND followup_question.txt "
+                        "(default: main_run.json and followup_question.txt next to the export)")
     p.add_argument("--source-link")
     p.add_argument("--persona-model-note")
     p.add_argument("--order", default="shuffled", choices=["shuffled", "fixed"])

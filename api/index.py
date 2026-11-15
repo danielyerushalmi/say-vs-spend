@@ -1,4 +1,4 @@
-"""Vercel serverless entry for Say vs. Spend: /api/* -> this function (see vercel.json).
+"""Vercel serverless entry for Crowd Check (Study 1: Say vs. Spend): /api/* -> this function (see vercel.json).
 
 Reuses frontend/server.py (chat, trust check, predictor, website grader). The Anthropic key comes ONLY
 from the ANTHROPIC_API_KEY environment variable set in the Vercel project settings; it is never in code.
@@ -31,12 +31,9 @@ class handler(BaseHTTPRequestHandler):
         r = urllib.parse.parse_qs(u.query).get("route", [""])[0] or u.path.rstrip("/").rsplit("/", 1)[-1]
         return r.strip("/")
 
-    def _body(self):
-        n = min(int(self.headers.get("Content-Length", "0") or 0), 64_000)
-        data = json.loads(self.rfile.read(n) or b"{}")
-        if not isinstance(data, dict):
-            raise ValueError("request body must be a JSON object")
-        return data
+    def _body(self, route):
+        n = S.body_length(self.headers.get("Content-Length"), 64_000)
+        return S.parse_body(self.rfile.read(n), route)  # same checks as frontend/server.py -> ValueError -> 400
 
     def do_GET(self):
         if self._route() == "health":
@@ -47,7 +44,7 @@ class handler(BaseHTTPRequestHandler):
     def do_POST(self):
         route = self._route()
         try:
-            data = self._body()
+            data = self._body(route)
             if route == "chat":
                 if not S.HAVE_WRAPPER:
                     return self._json(503, {"error": "Claude wrapper not available"})

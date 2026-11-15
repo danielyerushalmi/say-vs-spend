@@ -168,8 +168,10 @@ class FixtureScoreTests(unittest.TestCase):
         self.assertEqual((b["n_asked"], b["n_yes"], b["real_share"], b["ci90_low"]), (11, 0, 0.0, 0.0))
         self.assertAlmostEqual(b["ci90_high"], 0.1974, places=4)
 
-    def test_draft_question_wording_comes_from_run(self):
-        self.assertEqual(self.by_id["thredup"]["question"], RUN["trust_card"]["draft_question"])
+    def test_draft_question_reported_but_every_brand_scored_on_uniform_question(self):
+        self.assertEqual(self.by_id["thredup"]["question"],
+                         "Have you bought anything from ThredUp's website in the past 12 months?")
+        self.assertEqual(self.out["draft_question"], RUN["trust_card"]["draft_question"])
         self.assertEqual(self.by_id["bark"]["question"],
                          "Have you bought anything from BARK's website in the past 12 months?")
         self.assertIn(RUN["trust_card"]["draft_question"], rc.script_text(RUN))

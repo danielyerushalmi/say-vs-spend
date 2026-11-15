@@ -1,4 +1,4 @@
-/* Say vs. Spend: shared helpers for both pages (landing + desk).
+/* Crowd Check, Study 1 (Say vs. Spend): shared helpers for both pages (landing + desk).
    Loads the run file, fills the badge/banner/footer, exposes helpers on window.SS.
    All run-file text is inserted as text, never as HTML. */
 (() => {
@@ -73,7 +73,7 @@
   }
 
   function smoothScroll() {
-    if (REDUCED || !window.Lenis || !HAS_GSAP) return null
+    if (REDUCED || !window.Lenis || !HAS_GSAP || !window.ScrollTrigger) return null  // CDN scripts are deferred and may fail
     gsap.registerPlugin(ScrollTrigger)
     const lenis = new Lenis({ lerp: 0.1, smoothWheel: true, prevent: n => !!(n.closest && n.closest('[data-lenis-prevent]')) })
     lenis.on('scroll', ScrollTrigger.update)

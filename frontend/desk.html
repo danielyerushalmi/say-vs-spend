@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:,">
-<title>The desk · Say vs. Spend</title>
+<title>The desk · Crowd Check · Study 1: Say vs. Spend</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Inter:wght@400;500&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=51">
+<link rel="stylesheet" href="styles.css?v=52">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
-        integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
+        integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" defer></script>
 </head>
 <body class="desk-body">
   <div id="sample-banner" class="sample-banner" role="status" hidden>SAMPLE DATA, NOT A RESULT. Every brand and number on this page is a placeholder.</div>
   <header class="nav">
-    <a class="logo" href="index.html">Say <span>vs.</span> Spend</a>
+    <a class="logo" href="index.html">Crowd Check <small class="logo-study">Study 1: Say vs. Spend</small></a>
     <span id="run-badge" class="badge"></span>
     <a class="cta-pill" href="index.html"><span aria-hidden="true">←</span> The study</a>
   </header>
@@ -59,7 +59,7 @@
       <div class="panel" id="p-check" role="tabpanel" aria-labelledby="t-check" hidden>
         <div class="check">
           <h2 class="check-h">Grade your website</h2>
-          <p class="dim">Paste your link. We load your real page and grade it, then show where it would sit next to the sites our Flashpoint crowd of AI shoppers rated.</p>
+          <p class="dim">Paste your link. We load your real page and grade it, then show the range of scores our earlier Flashpoint crowd of AI shoppers gave real brands (ESTIMATE: no new crowd rates your site).</p>
           <form id="grade-form" class="check-form grade-form" autocomplete="off">
             <label for="grade-url" class="mono">Your website link</label>
             <div class="url-row"><input id="grade-url" type="text" inputmode="url" maxlength="500" required placeholder="https://your-store.com"><button type="submit">Grade it</button></div>
@@ -80,7 +80,7 @@
     </aside>
   </main>
 
-  <script src="common.js?v=51"></script>
-  <script src="desk.js?v=51"></script>
+  <script src="common.js?v=52" defer></script>
+  <script src="desk.js?v=52" defer></script>
 </body>
 </html>

@@ -61,6 +61,10 @@ def parse_scale(value: Optional[str]) -> tuple[Optional[int], Optional[str]]:
     if _is_blank(value):
         return None, None
     s = str(value).strip()
+    # A signed negative ("-3", "Rating: -3", Unicode minus) is out of range, never read as 3.
+    # A dash between words or after a digit ("10 - Extremely likely", "1-800") is not a sign.
+    if re.search(r"(?<![\w.])[-\u2212]\d", s):
+        return None, "out of range"
     m = re.match(r"^\s*(\d+(?:\.0+)?)(?!\d|\.\d)", s)
     if m:
         number = int(float(m.group(1)))
