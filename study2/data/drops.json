@@ -1,0 +1,656 @@
+[
+ {
+  "cik": "0000016099",
+  "name": "LUB LIQUIDATING TRUST",
+  "step": 4,
+  "reason": "no qualifying annual USD revenue (HTTP 200)"
+ },
+ {
+  "cik": "0000030302",
+  "name": "ALCO STORES INC",
+  "step": 3,
+  "reason": "last annual filing 2014-05-05 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000034151",
+  "name": "JO-ANN STORES INC",
+  "step": 3,
+  "reason": "last annual filing 2011-03-10 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000041289",
+  "name": "GIANT FOOD INC",
+  "step": 3,
+  "reason": "last annual filing 1998-05-19 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000068270",
+  "name": "RUBY TUESDAY INC",
+  "step": 3,
+  "reason": "last annual filing 2017-08-21 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000072333",
+  "name": "NORDSTROM INC",
+  "step": 3,
+  "reason": "last annual filing 2025-03-21 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000078916",
+  "name": "PIZZA INN INC",
+  "step": 3,
+  "reason": "last annual filing None outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000084129",
+  "name": "NEW RITE AID, LLC",
+  "step": 3,
+  "reason": "last annual filing 2023-05-01 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000086144",
+  "name": "SAFEWAY INC",
+  "step": 3,
+  "reason": "last annual filing 2015-03-04 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000098246",
+  "name": "TIFFANY & CO",
+  "step": 3,
+  "reason": "last annual filing 2020-03-20 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000353230",
+  "name": "OMNICARE INC",
+  "step": 3,
+  "reason": "last annual filing 2015-02-25 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000724571",
+  "name": "FREDS INC",
+  "step": 3,
+  "reason": "last annual filing 2019-05-03 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000737031",
+  "name": "TUESDAY MORNING INC",
+  "step": 3,
+  "reason": "last annual filing None outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000768835",
+  "name": "FORMER BL STORES INC",
+  "step": 3,
+  "reason": "last annual filing 2024-04-18 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000789356",
+  "name": "CALIFORNIA PIZZA KITCHEN, INC.",
+  "step": 3,
+  "reason": "last annual filing 2011-03-18 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000800240",
+  "name": "ODP Corp",
+  "step": 3,
+  "reason": "last annual filing 2025-02-26 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000807884",
+  "name": "CASH AMERICA INTERNATIONAL INC",
+  "step": 3,
+  "reason": "last annual filing 2016-02-26 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000809248",
+  "name": "CARROLS RESTAURANT GROUP, INC.",
+  "step": 3,
+  "reason": "last annual filing 2024-03-08 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000811082",
+  "name": "FERRELLGAS INC",
+  "step": 3,
+  "reason": "last annual filing None outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000840302",
+  "name": "MTS INC",
+  "step": 3,
+  "reason": "last annual filing 2006-06-30 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000850209",
+  "name": "FOOT LOCKER, INC.",
+  "step": 3,
+  "reason": "last annual filing 2025-03-27 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000863821",
+  "name": "RESTORATION HARDWARE INC",
+  "step": 3,
+  "reason": "last annual filing 2008-04-17 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000865436",
+  "name": "WHOLE FOODS MARKET INC",
+  "step": 3,
+  "reason": "last annual filing 2017-11-17 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000878726",
+  "name": "TUESDAY MORNING CORP/DE",
+  "step": 3,
+  "reason": "last annual filing 2022-09-28 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000884940",
+  "name": "STEIN MART INC",
+  "step": 3,
+  "reason": "last annual filing 2020-06-15 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000885721",
+  "name": "EXPRESS SCRIPTS INC",
+  "step": 3,
+  "reason": "last annual filing 2012-02-22 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000886158",
+  "name": "20230930-DK-Butterfly-1, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2023-06-14 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000887419",
+  "name": "CAMPING WORLD INC",
+  "step": 3,
+  "reason": "last annual filing None outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000890491",
+  "name": "BARNES & NOBLE INC",
+  "step": 3,
+  "reason": "last annual filing 2019-06-19 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000892907",
+  "name": "SPORT CHALET INC",
+  "step": 3,
+  "reason": "last annual filing 2014-07-01 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000896985",
+  "name": "Destination Maternity Corp",
+  "step": 3,
+  "reason": "last annual filing 2019-04-16 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000906780",
+  "name": "EMPIRE RESORTS INC",
+  "step": 3,
+  "reason": "last annual filing 2019-03-15 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000912833",
+  "name": "WEST MARINE INC",
+  "step": 3,
+  "reason": "last annual filing 2017-02-28 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000937941",
+  "name": "PCM, INC.",
+  "step": 3,
+  "reason": "last annual filing 2019-03-14 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000943823",
+  "name": "DAVE & BUSTERS INC",
+  "step": 3,
+  "reason": "last annual filing 2014-05-01 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001008802",
+  "name": "PAYLESS SHOESOURCE INC /MO/",
+  "step": 3,
+  "reason": "last annual filing 1998-04-21 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001011290",
+  "name": "99 CENTS ONLY STORES LLC",
+  "step": 3,
+  "reason": "last annual filing 2017-04-26 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001016837",
+  "name": "Alon Blue Square Israel Ltd",
+  "step": 3,
+  "reason": "last annual filing 2016-05-13 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001017480",
+  "name": "HIBBETT INC",
+  "step": 3,
+  "reason": "last annual filing 2024-03-25 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001037461",
+  "name": "BJS WHOLESALE CLUB INC",
+  "step": 3,
+  "reason": "last annual filing 2011-03-28 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001038523",
+  "name": "TRAVELCENTERS OF AMERICA INC",
+  "step": 3,
+  "reason": "last annual filing 2005-03-31 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001038572",
+  "name": "BRAZILIAN DISTRIBUTION CO COMPANHIA BRASILEIRA DE DISTR CBD",
+  "step": 3,
+  "reason": "last annual filing 2024-06-28 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001041379",
+  "name": "POPEYES LOUISIANA KITCHEN, INC.",
+  "step": 3,
+  "reason": "last annual filing 2017-02-22 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001041712",
+  "name": "CYBERIAN OUTPOST INC",
+  "step": 3,
+  "reason": "last annual filing 2001-05-29 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001054579",
+  "name": "HASTINGS ENTERTAINMENT INC",
+  "step": 3,
+  "reason": "last annual filing 2014-04-21 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001056285",
+  "name": "BRAND HOUSE COLLECTIVE, INC.",
+  "step": 3,
+  "reason": "last annual filing 2025-05-02 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001062449",
+  "name": "BUFFALO WILD WINGS INC",
+  "step": 3,
+  "reason": "last annual filing 2017-02-17 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001096376",
+  "name": "NUTRI SYSTEM INC /DE/",
+  "step": 3,
+  "reason": "last annual filing 2019-02-26 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001108699",
+  "name": "uWink, Inc.",
+  "step": 3,
+  "reason": "last annual filing None outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001166126",
+  "name": "Old COPPER Company, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2020-03-20 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001170650",
+  "name": "MEDCO HEALTH SOLUTIONS INC",
+  "step": 3,
+  "reason": "last annual filing 2012-02-21 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001211351",
+  "name": "RTW Retailwinds, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2020-06-09 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001223389",
+  "name": "CONNS INC",
+  "step": 3,
+  "reason": "last annual filing 2024-04-18 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001265572",
+  "name": "KONA GRILL INC",
+  "step": 3,
+  "reason": "last annual filing 2019-04-16 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001267130",
+  "name": "CABELAS INC",
+  "step": 3,
+  "reason": "last annual filing 2017-02-16 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001289729",
+  "name": "El Pollo Loco, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2005-03-29 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001310067",
+  "name": "SEARS HOLDINGS CORP",
+  "step": 3,
+  "reason": "last annual filing 2018-03-23 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001324272",
+  "name": "Ruths Hospitality Group, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2023-02-23 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001357204",
+  "name": "DUNKIN' BRANDS GROUP, INC.",
+  "step": 3,
+  "reason": "last annual filing 2020-02-24 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001359841",
+  "name": "Hanesbrands Inc.",
+  "step": 3,
+  "reason": "last annual filing 2025-02-14 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001360530",
+  "name": "Vitamin Shoppe, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2019-02-26 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001376755",
+  "name": "LATITUDE 360, INC.",
+  "step": 3,
+  "reason": "last annual filing 2015-04-15 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001378453",
+  "name": "TravelCenters of America Inc. /MD/",
+  "step": 3,
+  "reason": "last annual filing 2023-03-01 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001396033",
+  "name": "LL Flooring Holdings, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2024-03-01 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001396279",
+  "name": "hhgregg, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2016-05-19 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001411688",
+  "name": "Container Store Group, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2024-05-28 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001415301",
+  "name": "Del Frisco's Restaurant Group, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2019-03-11 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001468327",
+  "name": "Rent the Runway, Inc.",
+  "step": 5,
+  "reason": "revenue under $50M"
+ },
+ {
+  "cik": "0001476719",
+  "name": "Crumbs Bake Shop, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2014-03-31 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001478484",
+  "name": "zulily, inc.",
+  "step": 3,
+  "reason": "last annual filing 2015-02-24 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001483510",
+  "name": "EXP OldCo Winddown, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2024-12-31 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001498301",
+  "name": "Mahwah Bergen Retail Group, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2020-12-11 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001529192",
+  "name": "Vipshop Holdings Ltd",
+  "step": 3,
+  "reason": "annual report is a 20-F, not a 10-K"
+ },
+ {
+  "cik": "0001534992",
+  "name": "Fiesta Restaurant Group, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2023-03-03 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001536035",
+  "name": "Roundy's, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2015-03-13 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001548309",
+  "name": "Sears Hometown Stores, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2019-05-03 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001549802",
+  "name": "JD.com, Inc.",
+  "step": 3,
+  "reason": "annual report is a 20-F, not a 10-K"
+ },
+ {
+  "cik": "0001562039",
+  "name": "CST BRANDS, LLC",
+  "step": 3,
+  "reason": "last annual filing 2017-02-28 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001580864",
+  "name": "Vroom, Inc.",
+  "step": 4,
+  "reason": "no qualifying annual USD revenue (HTTP 200)"
+ },
+ {
+  "cik": "0001592379",
+  "name": "Papa Murphy's Holdings, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2019-03-14 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001593936",
+  "name": "Michaels Companies, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2021-03-09 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001594879",
+  "name": "Zoe's Kitchen, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2018-02-22 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001610092",
+  "name": "Diplomat Pharmacy, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2019-03-18 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001618921",
+  "name": "Walgreens Boots Alliance, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2024-10-15 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001627606",
+  "name": "DAVIDsTEA Inc.",
+  "step": 3,
+  "reason": "last annual filing 2022-04-29 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001630132",
+  "name": "Bojangles', Inc.",
+  "step": 3,
+  "reason": "last annual filing 2018-03-08 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001701114",
+  "name": "Blue Apron Holdings, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2023-03-16 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001752108",
+  "name": "Reebonz Holding Ltd",
+  "step": 3,
+  "reason": "last annual filing 2019-04-01 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001756708",
+  "name": "Jumia Technologies AG",
+  "step": 4,
+  "reason": "no qualifying annual USD revenue (HTTP 200)"
+ },
+ {
+  "cik": "0001776932",
+  "name": "MedMen Enterprises, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2022-09-09 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001825480",
+  "name": "Poshmark, Inc.",
+  "step": 3,
+  "reason": "last annual filing 2022-03-30 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0001859639",
+  "name": "Cazoo Group Ltd",
+  "step": 3,
+  "reason": "last annual filing 2023-03-30 outside 2025-07-01..2026-11-17"
+ },
+ {
+  "cik": "0000027419",
+  "name": "TARGET CORP",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0000039911",
+  "name": "GAP INC",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0000701985",
+  "name": "Bath & Body Works, Inc.",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0000745732",
+  "name": "ROSS STORES, INC.",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0000876523",
+  "name": "EZCORP INC",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0000912615",
+  "name": "URBAN OUTFITTERS INC",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0000935703",
+  "name": "DOLLAR TREE, INC.",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0001013488",
+  "name": "BJs RESTAURANTS INC",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0001023128",
+  "name": "LITHIA MOTORS INC",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0001318008",
+  "name": "Zumiez Inc",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0001546417",
+  "name": "Bloomin' Brands, Inc.",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0001547459",
+  "name": "Natural Grocers by Vitamin Cottage, Inc.",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0001576942",
+  "name": "Stitch Fix, Inc.",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0001636222",
+  "name": "Wingstop Inc.",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0001726173",
+  "name": "Biglari Holdings Inc.",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0001856437",
+  "name": "Victoria's Secret & Co.",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ },
+ {
+  "cik": "0001857154",
+  "name": "Krispy Kreme, Inc.",
+  "step": 8,
+  "reason": "not in the seeded random sample of 80"
+ }
+]

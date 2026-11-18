@@ -1,0 +1,120 @@
+{
+ "run": "pilot",
+ "model": "claude-haiku-5-5",
+ "recorded_at": "2026-11-17T19:05:11-05:00",
+ "label": "SYNTHETIC",
+ "n_personas": 5,
+ "n_brands": 3,
+ "calls": 5,
+ "input_tokens": 1774,
+ "output_tokens": 345,
+ "usd_actual": 0.0003,
+ "failures": [],
+ "rows": [
+  {
+   "persona": "p000",
+   "cik": "0000018498",
+   "brand": "GENESCO INC",
+   "heard": 4,
+   "buy": 3
+  },
+  {
+   "persona": "p000",
+   "cik": "0000028917",
+   "brand": "DILLARD'S, INC.",
+   "heard": 7,
+   "buy": 4
+  },
+  {
+   "persona": "p000",
+   "cik": "0000018255",
+   "brand": "CATO CORP",
+   "heard": 4,
+   "buy": 3
+  },
+  {
+   "persona": "p001",
+   "cik": "0000028917",
+   "brand": "DILLARD'S, INC.",
+   "heard": 7,
+   "buy": 4
+  },
+  {
+   "persona": "p001",
+   "cik": "0000018255",
+   "brand": "CATO CORP",
+   "heard": 4,
+   "buy": 3
+  },
+  {
+   "persona": "p001",
+   "cik": "0000018498",
+   "brand": "GENESCO INC",
+   "heard": 3,
+   "buy": 3
+  },
+  {
+   "persona": "p002",
+   "cik": "0000018255",
+   "brand": "CATO CORP",
+   "heard": 4,
+   "buy": 3
+  },
+  {
+   "persona": "p002",
+   "cik": "0000028917",
+   "brand": "DILLARD'S, INC.",
+   "heard": 7,
+   "buy": 5
+  },
+  {
+   "persona": "p002",
+   "cik": "0000018498",
+   "brand": "GENESCO INC",
+   "heard": 3,
+   "buy": 3
+  },
+  {
+   "persona": "p003",
+   "cik": "0000018255",
+   "brand": "CATO CORP",
+   "heard": 4,
+   "buy": 3
+  },
+  {
+   "persona": "p003",
+   "cik": "0000028917",
+   "brand": "DILLARD'S, INC.",
+   "heard": 7,
+   "buy": 5
+  },
+  {
+   "persona": "p003",
+   "cik": "0000018498",
+   "brand": "GENESCO INC",
+   "heard": 3,
+   "buy": 2
+  },
+  {
+   "persona": "p004",
+   "cik": "0000018498",
+   "brand": "GENESCO INC",
+   "heard": 4,
+   "buy": 3
+  },
+  {
+   "persona": "p004",
+   "cik": "0000028917",
+   "brand": "DILLARD'S, INC.",
+   "heard": 7,
+   "buy": 5
+  },
+  {
+   "persona": "p004",
+   "cik": "0000018255",
+   "brand": "CATO CORP",
+   "heard": 3,
+   "buy": 2
+  }
+ ]
+}

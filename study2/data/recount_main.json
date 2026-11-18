@@ -1,0 +1,11 @@
+{
+ "n_brands": 80,
+ "n_answers": 16000,
+ "intent_vs_revenue": 0.5492,
+ "intent_vs_fame": 0.784,
+ "fame_vs_revenue": 0.5659,
+ "heard_vs_revenue": 0.5328,
+ "partial_intent_revenue_given_fame": 0.2062,
+ "loo_correction_A": 0.5725,
+ "loo_fame_only": 0.5486
+}
