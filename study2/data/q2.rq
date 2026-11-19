@@ -1,0 +1,4 @@
+SELECT ?c ?cik ?article WHERE {
+  ?c wdt:P5531 ?cik .
+  ?article schema:about ?c ; schema:isPartOf <https://en.wikipedia.org/> .
+}

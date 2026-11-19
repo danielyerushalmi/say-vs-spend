@@ -1,0 +1,37 @@
+{
+ "n_brands": 80,
+ "intent_vs_revenue": 0.5491924331662018,
+ "intent_vs_fame": 0.7840080641644025,
+ "fame_vs_revenue": 0.5658696671354899,
+ "H1": {
+  "diff": 0.2348156309982007,
+  "range90": [
+   0.10823398844284643,
+   0.3676085390904358
+  ],
+  "verdict": "PASS",
+  "rule": "diff >= 0.20 and 5th percentile > 0"
+ },
+ "H2": {
+  "partial": 0.20622292477393905,
+  "range90": [
+   0.00246683435004682,
+   0.42087847468994666
+  ],
+  "verdict": "PASS (crowd adds nothing)",
+  "rule": "PASS if partial < 0.30 or range includes 0"
+ },
+ "H3": {
+  "correction_A": 0.5724566338490389,
+  "fame_only": 0.5486404125644632,
+  "raw_intent": 0.5491924331662018,
+  "verdict": "FAIL",
+  "rule": "correction_A - raw_intent >= 0.15",
+  "fame_back_in": true
+ },
+ "EXPLORATORY_heard_vs_revenue": 0.532750426347793,
+ "EXPLORATORY_sic5961": {
+  "n": 9,
+  "intent_vs_revenue": 0.38333333333333336
+ }
+}

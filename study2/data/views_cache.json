@@ -1,0 +1,398 @@
+{
+ "Cato_Corporation": {
+  "status": 200,
+  "views": 10892
+ },
+ "Genesco": {
+  "status": 200,
+  "views": 14865
+ },
+ "Target_Corporation": {
+  "status": 200,
+  "views": 542200
+ },
+ "Dillard's": {
+  "status": 200,
+  "views": 117895
+ },
+ "Dollar_General": {
+  "status": 200,
+  "views": 159399
+ },
+ "Gap_Inc.": {
+  "status": 200,
+  "views": 205892
+ },
+ "Dine_Brands": {
+  "status": 200,
+  "views": 43140
+ },
+ "Kroger": {
+  "status": 200,
+  "views": 371147
+ },
+ "Lowe's": {
+  "status": 200,
+  "views": 360273
+ },
+ "McDonald's": {
+  "status": 200,
+  "views": 1461020
+ },
+ "CVS_Health": {
+  "status": 200,
+  "views": 154831
+ },
+ "Nathan's_Famous": {
+  "status": 200,
+  "views": 90322
+ },
+ "Publix": {
+  "status": 200,
+  "views": 197759
+ },
+ "Sherwin-Williams": {
+  "status": 200,
+  "views": 103384
+ },
+ "ShopRite": {
+  "status": 200,
+  "views": 74104
+ },
+ "Walmart": {
+  "status": 200,
+  "views": 1234579
+ },
+ "Weis_Markets": {
+  "status": 200,
+  "views": 43676
+ },
+ "TJX": {
+  "status": 200,
+  "views": 145760
+ },
+ "AutoNation": {
+  "status": 200,
+  "views": 39568
+ },
+ "Home_Depot": {
+  "status": 200,
+  "views": 545504
+ },
+ "Bath_&_Body_Works": {
+  "status": 200,
+  "views": 87070
+ },
+ "Brinker_International": {
+  "status": 200,
+  "views": 57514
+ },
+ "Casey's": {
+  "status": 200,
+  "views": 89943
+ },
+ "Ross_Stores": {
+  "status": 200,
+  "views": 122793
+ },
+ "Best_Buy": {
+  "status": 200,
+  "views": 280407
+ },
+ "Macy's,_Inc.": {
+  "status": 200,
+  "views": 92005
+ },
+ "Lands'_End": {
+  "status": 200,
+  "views": 65786
+ },
+ "Jack_in_the_Box": {
+  "status": 200,
+  "views": 205203
+ },
+ "Destination_XL_Group": {
+  "status": 200,
+  "views": 7741
+ },
+ "Fastenal": {
+  "status": 200,
+  "views": 40382
+ },
+ "Starbucks": {
+  "status": 200,
+  "views": 802893
+ },
+ "Signet_Jewelers": {
+  "status": 200,
+  "views": 37813
+ },
+ "AutoZone": {
+  "status": 200,
+  "views": 73246
+ },
+ "EZCorp": {
+  "status": 200,
+  "views": 5927
+ },
+ "Buckle_(clothing_retailer)": {
+  "status": 200,
+  "views": 15780
+ },
+ "Shoe_Station_Group": {
+  "status": 200,
+  "views": 688
+ },
+ "O'Reilly_Auto_Parts": {
+  "status": 200,
+  "views": 83842
+ },
+ "Copart": {
+  "status": 200,
+  "views": 59827
+ },
+ "Papa_John's": {
+  "status": 200,
+  "views": 225701
+ },
+ "Winmark": {
+  "status": 200,
+  "views": 7154
+ },
+ "Costco": {
+  "status": 200,
+  "views": 930976
+ },
+ "Urban_Outfitters": {
+  "status": 200,
+  "views": 75695
+ },
+ "Tractor_Supply_Company": {
+  "status": 200,
+  "views": 63797
+ },
+ "American_Eagle_Outfitters": {
+  "status": 200,
+  "views": 201866
+ },
+ "Ferrellgas": {
+  "status": 200,
+  "views": 8427
+ },
+ "Insight_Enterprises": {
+  "status": 200,
+  "views": 27667
+ },
+ "RCI_Hospitality_Holdings": {
+  "status": 200,
+  "views": 15437
+ },
+ "Dollar_Tree": {
+  "status": 200,
+  "views": 129951
+ },
+ "Darden_Restaurants": {
+  "status": 200,
+  "views": 158851
+ },
+ "BJ's_Restaurants": {
+  "status": 200,
+  "views": 47715
+ },
+ "Amazon_(company)": {
+  "status": 200,
+  "views": 2385002
+ },
+ "Abercrombie_&_Fitch": {
+  "status": 200,
+  "views": 255835
+ },
+ "Penske_Automotive_Group": {
+  "status": 200,
+  "views": 24239
+ },
+ "Lithia_Motors": {
+  "status": 200,
+  "views": 38177
+ },
+ "Group_1_Automotive": {
+  "status": 200,
+  "views": 24084
+ },
+ "PetMed_Express": {
+  "status": 200,
+  "views": 5656
+ },
+ "Yum!_Brands": {
+  "status": 200,
+  "views": 455698
+ },
+ "PriceSmart": {
+  "status": 200,
+  "views": 48665
+ },
+ "Sonic_Automotive": {
+  "status": 200,
+  "views": 21030
+ },
+ "Chipotle_Mexican_Grill": {
+  "status": 200,
+  "views": 375171
+ },
+ "Cracker_Barrel": {
+  "status": 200,
+  "views": 177195
+ },
+ "Dick's_Sporting_Goods": {
+  "status": 200,
+  "views": 162812
+ },
+ "Build-A-Bear_Workshop": {
+  "status": 200,
+  "views": 72987
+ },
+ "Asbury_Automotive_Group": {
+  "status": 200,
+  "views": 13760
+ },
+ "Advance_Auto_Parts": {
+  "status": 200,
+  "views": 46107
+ },
+ "CarMax": {
+  "status": 200,
+  "views": 55730
+ },
+ "Red_Robin": {
+  "status": 200,
+  "views": 71143
+ },
+ "Five_Below": {
+  "status": 200,
+  "views": 85590
+ },
+ "Texas_Roadhouse": {
+  "status": 200,
+  "views": 176976
+ },
+ "Builders_FirstSource": {
+  "status": 200,
+  "views": 15649
+ },
+ "Zumiez": {
+  "status": 200,
+  "views": 25310
+ },
+ "Citi_Trends": {
+  "status": 200,
+  "views": 10811
+ },
+ "Sally_Beauty_Holdings": {
+  "status": 200,
+  "views": 13634
+ },
+ "CDW": {
+  "status": 200,
+  "views": 50274
+ },
+ "Ulta_Beauty": {
+  "status": 200,
+  "views": 80761
+ },
+ "Sweetgreen": {
+  "status": 200,
+  "views": 61498
+ },
+ "ThredUp": {
+  "status": 200,
+  "views": 13211
+ },
+ "Tillys": {
+  "status": 200,
+  "views": 17309
+ },
+ "Dave_&_Buster's": {
+  "status": 200,
+  "views": 101281
+ },
+ "Vipshop": {
+  "status": 200,
+  "views": 8558
+ },
+ "The_Honest_Company": {
+  "status": 200,
+  "views": 96074
+ },
+ "Bloomin'_Brands": {
+  "status": 200,
+  "views": 49619
+ },
+ "Vitamin_Cottage_Natural_Grocers": {
+  "status": 200,
+  "views": 11464
+ },
+ "JD.com": {
+  "status": 200,
+  "views": 176921
+ },
+ "The_RealReal": {
+  "status": 200,
+  "views": 36790
+ },
+ "Murphy_USA": {
+  "status": 200,
+  "views": 26675
+ },
+ "Sprouts_Farmers_Market": {
+  "status": 200,
+  "views": 97971
+ },
+ "Stitch_Fix": {
+  "status": 200,
+  "views": 26651
+ },
+ "Aramark": {
+  "status": 200,
+  "views": 68918
+ },
+ "1stdibs": {
+  "status": 200,
+  "views": 12075
+ },
+ "Wayfair": {
+  "status": 200,
+  "views": 152160
+ },
+ "Wingstop": {
+  "status": 200,
+  "views": 194333
+ },
+ "Albertsons": {
+  "status": 200,
+  "views": 218487
+ },
+ "Biglari_Holdings": {
+  "status": 200,
+  "views": 28667
+ },
+ "Chewy_(company)": {
+  "status": 200,
+  "views": 127967
+ },
+ "Coupang": {
+  "status": 200,
+  "views": 155206
+ },
+ "Victoria's_Secret": {
+  "status": 200,
+  "views": 471087
+ },
+ "Krispy_Kreme": {
+  "status": 200,
+  "views": 213742
+ },
+ "Dutch_Bros_Coffee": {
+  "status": 200,
+  "views": 71395
+ }
+}
